@@ -12,21 +12,21 @@ body:
   type: input
   attributes:
     label: Nom du chapitre concerné
-    placeholder: e.g. Cloud Native San Francisco
+    placeholder: Ex. : Cloud Native San Francisco
   validations:
     required: true
 - id: organizer
   type: textarea
   attributes:
     label: Présentez-vous : nom, adresse email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'une invitation) et lien obligatoire vers votre profil community.cncf.io
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: true
 - id: organizer_2
   type: textarea
   attributes:
     label: Expliquez pourquoi vous souhaitez rejoindre ou quitter ce chapitre
-    placeholder: e.g. Je souhaite rejoindre le chapitre comme coorganisateur et apporter mon expérience à la communauté
+    placeholder: Ex. : Je souhaite rejoindre le chapitre comme coorganisateur et apporter mon expérience à la communauté
   validations:
     required: false
 - type: markdown
@@ -37,9 +37,9 @@ body:
   type: checkboxes
   attributes:
     label: Code de conduite
-    description: "The Code de conduite helps create a safe space for everyone. We require that everyone agrees to it."
+    description: "Le Code de conduite contribue à créer un environnement sûr pour tous. Chaque personne doit l'accepter."
     options:
-      - label: J'accepte de respecter le [CNCF Code de conduite](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
+      - label: J'accepte de respecter le [Code de conduite CNCF](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
         required: false
 - id: organizer_residency
   type: checkboxes
@@ -63,13 +63,13 @@ body:
     label: Inclusion
     description: "Vous acceptez d'accueillir toutes les personnes souhaitant découvrir le cloud native, quel que soit leur niveau en open source."
     options:
-      - label: J'accepte. Pour cela, j'ai récemment suivi la formation [Inclusion Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/) (ne pas cocher si sans objet). J'ajouterai dans un commentaire le lien vers mon badge Credly attestant de cette formation.
+      - label: J'accepte. Pour cela, j'ai récemment suivi la formation [Inclusive Open Source Community Orientation (LFC102)](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/) (ne pas cocher si sans objet). J'ajouterai dans un commentaire le lien vers mon badge Credly attestant de cette formation.
         required: false
 - id: organizer_inclusivity_badge
   type: input
   attributes:
     label: Lien vers votre badge Credly LFC102
-    placeholder: e.g. https://www.credly.com/badges/...
+    placeholder: Ex. : https://www.credly.com/badges/...
     description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: false
