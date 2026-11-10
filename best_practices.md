@@ -1,274 +1,259 @@
-# Best Practices
+# Bonnes pratiques
 
-This page guides running a new Cloud Native Community Group based on the experience of existing ones.
-The diagram shows common steps for a meetup to organize.
-Depending on the size of the meetup additional steps may be required.
+Ce guide accompagne la gestion d'un nouveau Cloud Native Community Group à partir de l'expérience des groupes existants. Le schéma illustre les étapes habituelles de l'organisation d'un meetup. Des étapes supplémentaires peuvent être nécessaires selon sa taille.
 
 ```mermaid
 flowchart TB
-    create[Create a Cloud Native Community Group] --> start[Start planning the event]
-    start --> speakers[Find speakers] & sponsor[Find a sponsor]
-    sponsor --> location[Event location] & food[Food and drinks]
-    start --> schedule[Schedule the event]
-    schedule --> announce[Announce the event]
-    announce --> run[Run the event]
-    run --> wrapup[Post event]
-    run --> setup[Setup Location] & welcome[Welcome attendees] & program[Conduct program]
+    create[Créer un groupe communautaire Cloud Native] --> start[Commencer à préparer l'événement]
+    start --> speakers[Trouver des intervenants] & sponsor[Trouver un sponsor]
+    sponsor --> location[Lieu de l'événement] & food[Repas et boissons]
+    start --> schedule[Planifier l'événement]
+    schedule --> announce[Annoncer l'événement]
+    announce --> run[Organiser l'événement]
+    run --> wrapup[Après l'événement]
+    run --> setup[Préparer le lieu] & welcome[Accueillir les participants] & program[Animer le programme]
     wrapup --> start
-    wrapup --> retro[Retro] & resources[Share documents and pictures]
+    wrapup --> retro[Bilan] & resources[Partager documents et photos]
 
     classDef mainPath fill:#6A5ACD,stroke:#4747FF;
     class create,start,schedule,announce,run,wrapup mainPath;
 ```
 
-Each of the steps above are now described in more detail.
+Les étapes sont détaillées ci-dessous.
 
-- [0. Getting Started](#0-create-the-cloud-native-community-group)
-- [1. Start planning your event](#1-start-planning-you-event)
-  * [Find Speakers](#find-speakers)
-  * [Sponsorships](#sponsorships)
-    + [Sponsor Prospectus](#sponsor-prospectus)
-- [2. Schedule a new event](#2-schedule-a-new-event)
-  * [Booking](#booking)
-- [3. Announce the event](#3-announce-the-event)
-  * [Ticketing for an event](#ticketing-for-an-event)
-- [4. Run the event](#4-run-the-event)
-  * [Preparation](#preparation)
-  * [Event Introduction](#event-introduction)
-  * [Hosting the event](#hosting-the-event)
-- [5. Post event](#5-post-event)
-- [CNCF Community Groups Host and Organizer Checklists](#cncf-community-groups-host-and-organizer-checklists)
-  * [Host Checklist](#cncf-community-groups---host-checklist)
-    + [Confirm event details](#confirm-event-details)
-    + [Set up the event space](#set-up-the-event-space)
-    + [Plan food and refreshments](#plan-food-and-refreshments)
-    + [Assist with event check-in](#assist-with-event-check-in)
-    + [Foster a welcoming and inclusive atmosphere](#foster-a-welcoming-and-inclusive-atmosphere)
-    + [Coordinate with speakers and organizers](#coordinate-with-speakers-and-organizers)
-  * [Organizer Checklist](#cncf-community-groups---organizer-checklist)
-    + [Manage communications ahead of the event](#manage-communications-ahead-of-the-event)
-    + [Manage time during the event](#manage-time-during-the-event)
-    + [Facilitate audience engagement](#facilitate-audience-engagement)
-    + [Post-event tasks](#post-event-tasks)
-- [General notes](#general-notes)
-  * [CNCF swag](#cncf-swag)
-  * [Ask for help](#ask-for-help)
+- [0. Créer le groupe communautaire Cloud Native](#0-créer-le-groupe-communautaire-cloud-native)
+- [1. Commencer à préparer l'événement](#1-commencer-à-préparer-lévénement)
+  - [Trouver des intervenants](#trouver-des-intervenants)
+  - [Sponsors](#sponsors)
+    - [Dossier de sponsoring](#dossier-de-sponsoring)
+- [2. Planifier un nouvel événement](#2-planifier-un-nouvel-événement)
+  - [Réservations](#réservations)
+- [3. Annoncer l'événement](#3-annoncer-lévénement)
+  - [Billetterie](#billetterie)
+- [4. Organiser l'événement](#4-organiser-lévénement)
+  - [Préparation](#préparation)
+  - [Présentation de l'événement](#présentation-de-lévénement)
+  - [Animation de l'événement](#animation-de-lévénement)
+- [5. Après l'événement](#5-après-lévénement)
+- [Listes de vérification des hôtes et organisateurs CNCF](#listes-de-vérification-des-hôtes-et-organisateurs-cncf)
+  - [Liste de vérification de l'hôte](#liste-de-vérification-de-lhôte)
+  - [Liste de vérification de l'organisateur](#liste-de-vérification-de-lorganisateur)
+- [Remarques générales](#remarques-générales)
+  - [Objets promotionnels CNCF](#objets-promotionnels-cncf)
+  - [Demander de l'aide](#demander-de-laide)
 
-## 0. Create the Cloud Native Community Group
+## 0. Créer le groupe communautaire Cloud Native
 
-CNCF staff is responsible for creating the Cloud Native Community Groups (see the instructions in the [README.md](../README.md) file, but to understand the various admin rights of who can create new groups, please visit the [OCGroups documentation](https://ocgroups.dev/docs#/getting-started/choose-dashboard?id=how-to-pick-the-right-workspace).
-It is useful to create a community slack channel `#cloud-native-<city name>` for event coordination ([CNCF Slack](https://app.slack.com/client/T08PSQ7BQ/C015WPLD3F1)).
+Le personnel CNCF est responsable de la création des groupes communautaires Cloud Native (consultez [README.md](./README.md)). Pour connaître les différents droits d'administration et savoir qui peut créer un groupe, consultez la [documentation OCGroups](https://ocgroups.dev/docs#/getting-started/choose-dashboard?id=how-to-pick-the-right-workspace).
 
-Before you start promoting your group, check out [branding.md](./branding.md) for the official logo, naming conventions, and other brand assets.
+Il est utile de créer un canal Slack communautaire `#cloud-native-<nom-de-ville>` pour coordonner les événements ([Slack CNCF](https://app.slack.com/client/T08PSQ7BQ/C015WPLD3F1)).
 
-The **description** of the group is left to the discretion of the organizers.
+Avant de promouvoir votre groupe, consultez [branding.md](./branding.md) pour le logo officiel, les conventions de nommage et les autres ressources graphiques.
 
-A brief description of the role of the CNCF and the Cloud Native approach could be added.
+La **description** du groupe est laissée à l'appréciation des organisateurs. Vous pouvez y ajouter une brève présentation du rôle de la CNCF et de l'approche cloud native, en vous inspirant de la [définition du cloud native](https://github.com/cncf/toc/blob/master/DEFINITION.md).
 
-You can use text from the [Cloud Native Definition](https://github.com/cncf/toc/blob/master/DEFINITION.md).
+Le plus important est de maintenir un **groupe actif**, avec des événements fréquents : idéalement une fois par mois, et au minimum une fois tous les 90 jours. Les événements virtuels comme les meetups réguliers sont encouragés.
 
-The most important thing is to keep an **active group**, with frequent events (ideally once a month | minimum one every 90 days). We encourage folks to run either online events or regular meetup events.
+Il peut être difficile de faire vivre un groupe seul. Il est préférable de s'entourer de coorganisateurs motivés et engagés. Travailler ensemble permet de répartir la charge et d'élargir le réseau.
 
-Sustaining a group yourself can be challenging to manage. Ideally, it would be best if you had a team of passionate and committed co-organizers.
+## 1. Commencer à préparer l'événement
 
-Joining forces helps spread the load and expands the network.
+### Trouver des intervenants
 
-## 1. Start planning your event
-
-### Find Speakers
-
-You should provide a **form** to allow people to submit their talk proposal similar to this:
+Mettez à disposition un **formulaire** permettant de proposer une intervention, par exemple :
 https://docs.google.com/forms/d/1V2Y03YMOrIor0M796_WMbYx-fdsn80ngaT-PIum8gUU/edit
 
-> **_Note_**: Make a copy! Please do not edit that form.
+> **Remarque :** faites une copie de ce formulaire ! Ne modifiez pas l'original.
 
-Pro Tip: Sessionize has a community license that you can apply for, if you host free community events. [Read more](https://sessionize.com/playbook/community-license)
+**Conseil :** Sessionize propose une licence communautaire à laquelle vous pouvez candidater si vous organisez des événements gratuits. [En savoir plus](https://sessionize.com/playbook/community-license).
 
-When possible, take care to review their presentations, and always abide by CNCF's values to remain vendor nuetral.
+Dans la mesure du possible, relisez les présentations des intervenants et respectez toujours les valeurs de la CNCF en matière de neutralité vis-à-vis des fournisseurs.
 
-Vendor neutrality in the context of a conference session refers to the principle of maintaining an impartial and unbiased environment during the session, particularly when discussing products, services, or solutions offered by different vendors. The goal is to ensure that the content presented is free from any undue influence, endorsements, or promotional activities related to specific vendors.
+Dans le contexte d'une conférence, la **neutralité vis-à-vis des fournisseurs** consiste à maintenir un environnement impartial, notamment lorsque plusieurs produits, services ou solutions sont évoqués. Le contenu ne doit pas subir d'influence indue ni devenir une publicité ou une recommandation commerciale pour un fournisseur particulier.
 
-By adhering to the concept of vendor neutrality it fosters an environment where knowledge sharing and learning take precedence over commercial interests, benefiting both attendees and the broader industry.
+Cette neutralité donne la priorité au partage des connaissances et à l'apprentissage plutôt qu'aux intérêts commerciaux, au bénéfice des participants et de l'ensemble du secteur.
 
-Attend **conferences** (e.g, DockerCon, CloudNativeCon, etc.) where you can find speakers and meet many people who use or are involved in the CNCF projects that may be interested in joining your group.
+Participez à des **conférences** comme DockerCon ou CloudNativeCon : vous pourrez y rencontrer des intervenants potentiels et des personnes qui utilisent les projets CNCF ou y contribuent et pourraient rejoindre votre groupe.
 
-### Sponsorships
+### Sponsors
 
-You should contact local technology companies. Many of them are interested in hosting such kind of events.
+Contactez les entreprises technologiques locales. Beaucoup souhaitent accueillir ce type d'événement.
 
-It is better to find a place in a central location. Downtown would be ideal because it's easier to access for most of the attendees.
+Privilégiez un lieu central, facilement accessible à la majorité des participants.
 
-If you are on a budget to order food, it is usually best to opt for cold dishes. It is highly recommended to offer vegan and vegetarian options.
+Si le budget consacré aux repas est limité, les plats froids sont souvent une solution pratique. Il est fortement recommandé de proposer des options végétaliennes et végétariennes.
 
-What to offer the sponsors in return
-* Thank your sponsors by highlighting them in the event settings on your community platform. For specific instructions on managing sponsors and reusable profiles, please refer to the [OCGroups documentation](https://ocgroups.dev/docs#/guides/group-dashboard?id=sponsors-reusable-profiles).
-* Offer your sponsor to set up a small table in our just outside the room, so people can engage in conversation.
-* Offer your sponsor no more than 15 minutes of talking time on the stage. But be sure they are NOT the main content.
+En contrepartie, vous pouvez proposer aux sponsors de :
 
-#### Sponsor Prospectus
+- Les remercier en les mettant en avant dans les paramètres de l'événement sur votre plateforme communautaire. Consultez la [documentation OCGroups](https://ocgroups.dev/docs#/guides/group-dashboard?id=sponsors-reusable-profiles) pour gérer les sponsors et leurs profils réutilisables.
+- Installer une petite table dans la salle ou à proximité afin d'échanger avec les participants.
+- Disposer de **15 minutes de parole au maximum** sur scène, sans constituer le contenu principal de l'événement.
 
-If you need a formal presentation to show, or a PDF to share with a prospecting sponsor, we have created a professional template that highlights common needs for meetups, and what sponsors can get in return.
+#### Dossier de sponsoring
 
-Feel free to make a copy and edit [this template in Canva](https://www.canva.com/design/DAGSX9KG53Q/8tAN20diaVRFPvIcMWVOYA/edit?utm_content=DAGSX9KG53Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). Make sure the packages match what your team can offer, and images to be based on your past meetups.
+Si vous avez besoin d'une présentation formelle ou d'un PDF à transmettre à un sponsor potentiel, un modèle professionnel décrit les besoins habituels des meetups et les contreparties possibles.
 
-## 2. Schedule a new event
+Vous pouvez [copier et adapter ce modèle Canva](https://www.canva.com/design/DAGSX9KG53Q/8tAN20diaVRFPvIcMWVOYA/edit?utm_content=DAGSX9KG53Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). Veillez à proposer des offres réalistes au regard des moyens de votre équipe et à utiliser des photos issues de vos événements précédents.
 
-Then the essential information is about the agenda. Each talk description should contain:
+## 2. Planifier un nouvel événement
 
+Les informations essentielles concernent le programme. Chaque présentation devrait comprendre :
+
+```text
+- Une courte biographie de l'intervenant
+- Un titre attrayant
+- Un paragraphe décrivant le contenu de la présentation ou de la démonstration
 ```
-- A short bio of the speaker
-- An attractive title
-- A paragraph describing the content of the presentation/demo
-```
 
-If you're planning a hands-on demo, you should ensure that the WiFi can handle the number of attendees.
+Si vous prévoyez une démonstration pratique, vérifiez que le Wi-Fi peut supporter le nombre de participants.
 
-Furthermore, you should check you're not limited by some quotas (Cloud provider).
+Vérifiez également les quotas éventuels de votre fournisseur cloud.
 
-The choice of date and time matters. Most meetups choose Tuesdays, Wednesdays, or Thursdays after work. But use your discretion, since every culture varies.
+La date et l'heure comptent. De nombreux meetups se déroulent le mardi, le mercredi ou le jeudi après le travail, mais adaptez-vous aux habitudes culturelles locales.
 
-### Booking
+### Réservations
 
-If the room capacity limits you, you should do an **overbooking**.
+Si la capacité de la salle est limitée, envisagez la **surréservation**.
 
-Most of the time, there are 30% of people who RSVP, but never come. Recently KCDs (1 to 2 day summit-like events have a 92% show rate).
+Selon le guide source, environ **30 % des personnes inscrites** ne se présentent généralement pas. Le document mentionne également un taux de présence récent de **92 %** pour les KCD, événements de type conférence d'un ou deux jours. Ces chiffres sont repris du guide d'origine et ne sont pas vérifiés indépendamment ici.
 
-You should think about sending a **reminder** message to the meetup group to ask the people to free their place if they can't come.
+Pensez à envoyer un **rappel** aux inscrits pour leur demander de libérer leur place s'ils ne peuvent finalement pas venir.
 
-## 3. Announce the event
+## 3. Annoncer l'événement
 
-Event pages and announcements work well when they cover the topics, speakers, date, time, location, refreshments, and sponsors. Talk titles and descriptions that explain what attendees will learn, without claiming that a product is the best or only option, keep the focus on the community.
-CNCF can help amplify posts that follow its social media guidelines. Under those guidelines, CNCF can't share content that promotes a vendor product, content that links to a company website, or posts from member company or vendor accounts. Public events that are open to everyone can be promoted. Posts that link to the event page, speaker profiles, project websites, and GitHub repositories are the easiest for CNCF to share.
-For images and graphics, please use images that are free for commercial use, or credit the creator. The Canva templates in [branding.md](https://github.com/cncf/communitygroups/blob/main/branding.md#promotional-graphics) can help with sizing and placement.
+Une page d'événement efficace présente les sujets, les intervenants, la date, l'heure, le lieu, les rafraîchissements et les sponsors. Les titres et descriptions doivent expliquer ce que les participants apprendront, sans prétendre qu'un produit constitue la seule ou la meilleure solution.
 
-The following steps can be useful to attract more folks for your upcoming event
+La CNCF peut relayer les publications conformes à ses règles de communication. Ces règles excluent les contenus faisant la promotion d'un produit commercial, les publications renvoyant vers un site d'entreprise et celles émanant de comptes de fournisseurs ou d'entreprises membres. Les événements publics ouverts à tous peuvent être promus. Les liens vers la page de l'événement, les profils des intervenants, les sites des projets et les dépôts GitHub sont les plus faciles à partager.
 
-- Reach out to meetups in the area taking place to share your event (don't forget to return the favor)
-- Post on the public #socialmedia Slack channel and CNCF will monitor and aplify or engage with it. This can be done in the CNCF Slack workspace.
-- Place your event in newsletters and podcasts
-- Write a CNCF blog post that is about 800 words. Submit for review at marketing@cncf.io.
+Pour les visuels, utilisez des images libres d'utilisation commerciale ou créditez leur auteur. Les modèles Canva de [branding.md](./branding.md#visuels-promotionnels) aident à choisir les dimensions et la mise en page.
 
-### Ticketing for an event
+Quelques pistes pour attirer davantage de participants :
 
-All Cloud Native Community Groups (CNCGs) must use [Open Community Groups](https://ocgroups.dev/cncf) for registration of their events. Each meetup must remain free to attend.
+- Contactez d'autres communautés et meetups locaux pour leur demander de relayer votre événement, et rendez-leur la pareille.
+- Publiez dans le canal Slack public **#socialmedia** de la CNCF, où l'équipe peut relayer votre contenu ou interagir avec lui.
+- Faites figurer l'événement dans des newsletters et des podcasts.
+- Rédigez un article de blog CNCF d'environ **800 mots**, à soumettre à **marketing@cncf.io**.
 
-## 4. Run the event
+### Billetterie
 
-There are a few tips you should look out for running the event
+Tous les Cloud Native Community Groups (CNCG) doivent utiliser [Open Community Groups](https://ocgroups.dev/cncf) pour les inscriptions. La participation à chaque meetup doit rester **gratuite**.
 
-### Preparation
-- **Guide attendees to the event location**: make sure the path from the street to the event location is labeled and clear
-- **Prepare the speaker room**: make sure you do a technical check, prepare chairs and all the equipment you might use
-- **Guide attendees at the venue**: label the way to restrooms, the elevator, terrace and only other places that are visited during the event. If the location has “restricted” areas, label those too.
-- **Food**: prepare a place to put the food (if you order for 100 people, this takes a lot of space), label ingredients for allergies and personal preference (vegan, halal food, …)
+## 4. Organiser l'événement
 
-### Event Introduction
+Voici quelques conseils pour le bon déroulement de l'événement.
 
-As an introduction to the event, there are common recommendations you should talk about or make clear to everyone beforehand.
+### Préparation
 
-- **CNCF Code of Conduct**: As CNCF Community Event, you oblige by the [code of conduct](https://www.cncf.io/conduct/). You can summarize it to be "excellent to each other"
-- **Taking picture's disclaimer**: Make attendees aware that the organizer team takes pictures, with some selective ones getting shared publicly
-- **Thank the sponsor(s)**
-- **Welcome feedback**: share information where to reach the organizers to ask questions and share feedback about the event.
+- **Orienter les participants vers le lieu :** le trajet depuis la rue doit être clairement indiqué.
+- **Préparer la salle des interventions :** effectuez un contrôle technique, installez les chaises et préparez le matériel nécessaire.
+- **Installer la signalétique :** indiquez les toilettes, l'ascenseur, la terrasse et les autres espaces utiles. Signalez aussi les zones à accès restreint.
+- **Préparer les repas :** prévoyez suffisamment de place pour les aliments, notamment lors des grands événements. Étiquetez les ingrédients et les options alimentaires en tenant compte des allergies et des préférences (végétalien, halal, etc.).
 
-### Hosting the event
+### Présentation de l'événement
 
-Some learnings facilitating the event:
+Au début de l'événement, expliquez les points suivants :
 
-- **Hosting**: It is useful to select one of the organizers as host to give the event introduction, introduce speakers and in general provide guidance to the audience during the event.
-- **Speaker times**: It often happens that a talk takes a little longer than anticipated or the audience is asking many questions. In smaller meetups you can be flexible about it, in bigger events you should interrupt and stick to the schedule.
+- **Code de conduite CNCF :** en tant qu'événement communautaire CNCF, vous devez respecter le [Code de conduite](https://www.cncf.io/conduct/). Vous pouvez en résumer l'esprit par « respectons-nous mutuellement ».
+- **Prises de vue :** informez les participants que l'équipe d'organisation prend des photos et que certaines pourront être publiées.
+- **Remerciements :** remerciez les sponsors.
+- **Retours :** expliquez comment contacter les organisateurs pour poser des questions ou partager des commentaires.
 
-## 5. Post event
+### Animation de l'événement
 
-If possible, you should record videos of the presentations and take pictures for social media and the event page to share afterward.
+- **Animation :** désignez si possible un organisateur pour présenter l'événement, introduire les intervenants et guider le public.
+- **Gestion du temps :** les présentations et questions peuvent dépasser la durée prévue. Une certaine souplesse est possible dans les petits meetups ; les événements plus importants doivent davantage respecter le programme.
 
-You should also **share** the slides with all members after the event. Optionally, please submit them to the [CNCF Presentations repo](https://github.com/cncf/presentations) on GitHub.
+## 5. Après l'événement
 
-It is also recommended to meet with the other organizers for a debrief to discuss what went well and where to improve for the next meeting.
+Si possible, enregistrez les présentations et prenez des photos pour les réseaux sociaux et la page de l'événement.
 
-## CNCF Community Groups Host and Organizer Checklists
+**Partagez également les diapositives** avec tous les membres après l'événement. Vous pouvez aussi les proposer au [dépôt CNCF Presentations](https://github.com/cncf/presentations).
 
-These checklists are designed to support you in your role as a venue host or organizer for the CNCF Community Groups event. They provide a guide to help you prepare and manage the event effectively.
+Il est recommandé de réunir les organisateurs pour un bilan : ce qui a bien fonctionné et ce qui pourrait être amélioré lors de la prochaine rencontre.
 
-### CNCF Community Groups - Host Checklist
+## Listes de vérification des hôtes et organisateurs CNCF
 
-Thanks for being our venue host! This checklist will assist you in preparing the event space and ensuring a smooth experience for attendees.
+Ces listes aident les personnes qui accueillent ou organisent les événements des groupes communautaires CNCF à les préparer et les gérer efficacement.
 
-#### Confirm event details
+### Liste de vérification de l'hôte
 
-- [ ] Confirm event date, time, and location.
-- [ ] Ensure the venue is available and suitable for the event size.
-- [ ] Check if any permits or permissions are required for hosting the event.
+Merci d'accueillir l'événement ! Cette liste vous aidera à préparer le lieu et à offrir une bonne expérience aux participants.
 
-#### Set up the event space
+#### Confirmer les informations de l'événement
 
-- [ ] Arrange seating, tables, and any necessary presentation equipment (e.g., projector, screen, microphones).
-- [ ] Test all equipment to ensure proper functionality.
-- [ ] Provide clear signage directing attendees to the event space, including a map showing washrooms.
+- [ ] Confirmer la date, l'heure et le lieu.
+- [ ] Vérifier que le lieu est disponible et adapté au nombre de participants.
+- [ ] Vérifier si des autorisations ou permis sont nécessaires.
 
-#### Plan food and refreshments
+#### Préparer l'espace
 
-- [ ] Coordinate with the organizers on the type and quantity of food and drinks to be served.
-- [ ] Ensure that dietary restrictions and allergens are considered and labeled accordingly.
-- [ ] Plan for the timely arrival of food and refreshments, ideally at the start or during a designated break.
+- [ ] Disposer les sièges, tables et équipements de présentation (projecteur, écran, microphones, etc.).
+- [ ] Tester tous les équipements.
+- [ ] Installer une signalétique claire vers la salle, notamment un plan indiquant les toilettes.
 
-#### Assist with event check-in
+#### Prévoir les repas et boissons
 
-- [ ] Welcome attendees as they arrive and check them in, if necessary.
-- [ ] Provide any necessary information about the venue (restrooms, emergency exits, etc.).
-- [ ] Distribute name tags or other identification materials, if applicable.
-- [ ] Address accessibility needs at the venue, such as wheelchair access or sign language interpreters.
+- [ ] Coordonner avec les organisateurs la nature et les quantités de repas et boissons.
+- [ ] Prendre en compte les restrictions alimentaires et signaler les allergènes.
+- [ ] Prévoir une livraison à temps, idéalement au début de l'événement ou pendant une pause prévue.
 
-#### Foster a welcoming and inclusive atmosphere
+#### Aider à l'accueil et à l'enregistrement
 
-- [ ] Create a welcoming environment for all attendees, ensuring inclusivity and respect.
+- [ ] Accueillir les participants à leur arrivée et enregistrer leur présence si nécessaire.
+- [ ] Communiquer les informations pratiques sur le lieu (toilettes, issues de secours, etc.).
+- [ ] Distribuer des badges ou autres supports d'identification si nécessaire.
+- [ ] Prendre en compte les besoins d'accessibilité (fauteuil roulant, interprétation en langue des signes, etc.).
 
-#### Coordinate with speakers and organizers
+#### Favoriser un environnement accueillant et inclusif
 
-- [ ] Review the event agenda and communicate any last-minute changes.
-- [ ] Ensure speakers have everything they need for their presentations (e.g., clicker/slide advancer, possibly USB and USB-C adapters for different machines).
-- [ ] Offer assistance in setting up and troubleshooting any presentation equipment.
+- [ ] Veiller à ce que chaque participant se sente bienvenu, dans le respect et l'inclusion.
 
-### CNCF Community Groups - Organizer Checklist
+#### Coordonner les intervenants et organisateurs
 
-As an organizer, you play a crucial role in managing various aspects of the event. This checklist will guide you through the necessary tasks before, during, and after the event to ensure its success.
+- [ ] Vérifier le programme et communiquer les éventuels changements de dernière minute.
+- [ ] Vérifier que les intervenants disposent du matériel nécessaire (télécommande, adaptateurs USB et USB-C, etc.).
+- [ ] Aider à installer et dépanner le matériel de présentation.
 
-#### Manage communications ahead of the event
+### Liste de vérification de l'organisateur
 
-- [ ] Send speaker logistics ahead of time, including presentation time and setup requirements.
-- [ ] Request the speaker's headshot and preferred bio.
-- [ ] Ask to review their slides in advance to ensure there are no vendor pitches.
-- [ ] Specify screen dimensions (considering 4:3 or 16:9 slide aspect ratio).
-- [ ] Allocate Q&A time and any networking opportunities.
-- [ ] Build a survey for attendee feedback during the event and generate a QR code.
-- [ ] Create housekeeping slides to loop at the beginning and end of the event, including the QR code for the survey.
+En tant qu'organisateur, vous coordonnez de nombreux aspects de l'événement. Cette liste couvre les tâches à réaliser avant, pendant et après la rencontre.
 
-#### Manage time during the event
+#### Gérer la communication avant l'événement
 
-- [ ] Serve as the emcee to address light housekeeping items and introduce speakers.
-- [ ] Monitor the event's schedule and gently remind the speaker(s) of time limits.
-- [ ] Assist with transitions between speakers or activities to maintain the event flow. Use this opportunity for housekeeping announcements.
+- [ ] Envoyer aux intervenants les informations logistiques : horaire et besoins techniques.
+- [ ] Demander leur photo et leur biographie préférée.
+- [ ] Demander à consulter les diapositives en avance pour éviter les présentations commerciales.
+- [ ] Préciser les dimensions de l'écran (format 4:3 ou 16:9).
+- [ ] Prévoir du temps pour les questions-réponses et les échanges informels.
+- [ ] Préparer un questionnaire de satisfaction et générer un QR code.
+- [ ] Préparer les diapositives d'informations pratiques à diffuser au début et à la fin de l'événement, avec le QR code du questionnaire.
 
-#### Facilitate audience engagement
+#### Gérer le temps pendant l'événement
 
-- [ ] Encourage attendees to participate in discussions or activities.
-- [ ] Assist with Q&A sessions, if applicable.
-- [ ] At the end of each session, ask attendees to take time to review the session by filling out the survey you provided on the housekeeping slides.
-    - [ ] Note: Asking for feedback while attendees are still seated and the content/experience is fresh in their minds tends to yield better feedback.
+- [ ] Jouer le rôle de maître de cérémonie pour les annonces pratiques et la présentation des intervenants.
+- [ ] Suivre le programme et rappeler courtoisement les limites de temps.
+- [ ] Faciliter les transitions entre interventions ou activités, notamment pour les annonces pratiques.
 
-#### Post-event tasks
+#### Encourager la participation du public
 
-- [ ] Assist with clean-up and restore the event space to its original state.
-- [ ] Gather any lost-and-found items for attendees to retrieve.
-- [ ] Thank the attendees for their participation and invite them to future events.
-- [ ] Upload any videos or photos for post-event promotion.
+- [ ] Inviter les participants à prendre part aux discussions et activités.
+- [ ] Aider à animer les questions-réponses.
+- [ ] À la fin de chaque session, demander aux participants de remplir le questionnaire présenté sur les diapositives d'informations pratiques.
+  - [ ] **Remarque :** les retours sont souvent plus utiles lorsque les participants sont encore assis et que l'expérience est récente.
 
-## General notes
+#### Tâches après l'événement
 
-### CNCF swag
+- [ ] Aider au rangement et remettre le lieu dans son état initial.
+- [ ] Rassembler les objets oubliés afin que leurs propriétaires puissent les récupérer.
+- [ ] Remercier les participants et les inviter aux prochains événements.
+- [ ] Publier les vidéos et photos destinées à la communication après l'événement.
 
-If you're a **newly** created meetup and added to community.cncf.io, you have the opportunity earn swag! If you have hosted at last two events within a 90-day period, please reach out to community-groups@cncf.io for a complimentary $100 swag certificate to the [CNCF Store](https://store.cncf.io). Just link to the two events of yours that are in reference.
+## Remarques générales
 
-### Ask for help
+### Objets promotionnels CNCF
 
-If you have any other questions, you can ask them in the [CNCF Slack](https://cloud-native.slack.com/archives/C015WPLD3F1).
+Si votre meetup vient d'être créé et ajouté à community.cncf.io, vous pouvez obtenir des objets promotionnels ! Après avoir organisé **au moins deux événements en 90 jours**, contactez **community-groups@cncf.io** pour demander un bon de **100 USD** valable sur la [boutique CNCF](https://store.cncf.io). Ajoutez les liens vers les deux événements concernés.
+
+### Demander de l'aide
+
+Pour toute autre question, vous pouvez solliciter la communauté dans le [Slack CNCF](https://cloud-native.slack.com/archives/C015WPLD3F1).
