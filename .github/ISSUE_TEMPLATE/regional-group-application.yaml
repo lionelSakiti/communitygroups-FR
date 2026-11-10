@@ -17,7 +17,7 @@ body:
   attributes:
     label: Nom de la ville ou du lieu de votre CNCG
     description: "Si votre groupe a été désactivé récemment, ne remplissez pas ce formulaire : contactez plutôt community-groups@cncf.io."
-    placeholder: e.g. Cloud Native San Francisco
+    placeholder: Ex. : Cloud Native San Francisco
   validations:
     required: true
 - id: location
@@ -31,7 +31,7 @@ body:
   type: textarea
   attributes:
     label: Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: true
 - id: organizer_inclusivity
@@ -40,13 +40,13 @@ body:
     label: Inclusion
     description: "Vous vous engagez à accueillir toutes les personnes souhaitant découvrir le cloud native, quel que soit leur niveau d'expérience en open source."
     options:
-      - label: J'accepte/Nous acceptons. Pour cela, j'ai/nous avons récemment suivi la formation [Inclusion Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
+      - label: J'accepte/Nous acceptons. Pour cela, j'ai/nous avons récemment suivi la formation [Inclusive Open Source Community Orientation (LFC102)](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
         required: true
 - id: organizer_inclusivity_badge_1
   type: input
   attributes:
     label: Lien vers votre badge Credly LFC102
-    placeholder: e.g. https://www.credly.com/badges/...
+    placeholder: Ex. : https://www.credly.com/badges/...
     description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: true
@@ -54,14 +54,14 @@ body:
   type: textarea
   attributes:
     label: Présentez votre coorganisateur : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers son profil community.cncf.io
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: false
 - id: organizer_inclusivity_badge_2
   type: input
   attributes:
     label: Lien vers le badge Credly LFC102 de votre coorganisateur
-    placeholder: e.g. https://www.credly.com/badges/...
+    placeholder: Ex. : https://www.credly.com/badges/...
     description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: false
@@ -69,14 +69,14 @@ body:
   type: textarea
   attributes:
     label: Présentez votre coorganisateur : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers son profil community.cncf.io
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: false
 - id: organizer_inclusivity_badge_3
   type: input
   attributes:
     label: Lien vers le badge Credly LFC102 de votre coorganisateur
-    placeholder: e.g. https://www.credly.com/badges/...
+    placeholder: Ex. : https://www.credly.com/badges/...
     description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: false
@@ -84,23 +84,23 @@ body:
   type: textarea
   attributes:
     label: Si vous organisez déjà un meetup, indiquez son lien ici
-    placeholder: e.g. https://www.meetup.com/bay-area-kubernetes-meetup/
+    placeholder: Ex. : https://www.meetup.com/bay-area-kubernetes-meetup/
   validations:
     required: false
 - id: content
   type: textarea
   attributes:
     label: Quelle est la mission ou l'objectif de ce nouveau groupe ?
-    placeholder: e.g. Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, de les gérer et de les étendre. Tous les niveaux sont les bienvenus ; nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes.
+    placeholder: Ex. : Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, de les gérer et de les étendre. Tous les niveaux sont les bienvenus ; nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes.
   validations:
     required: true
 - id: organizer_coc
   type: checkboxes
   attributes:
     label: Code de conduite
-    description: "The Code de conduite helps create a safe space for everyone. We require everyone to agree to it, including any and all future speakers and future co-organizers."
+    description: "Le Code de conduite contribue à créer un environnement sûr pour tous. Toutes les personnes, y compris les futurs intervenants et coorganisateurs, doivent l'accepter."
     options:
-      - label: J'accepte/Nous acceptons de respecter le [CNCF Code de conduite](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
+      - label: J'accepte/Nous acceptons de respecter le [Code de conduite CNCF](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
         required: true
 - id: organizer_residency
   type: checkboxes
