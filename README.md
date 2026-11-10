@@ -46,14 +46,14 @@ Pour l'ensemble des Cloud Native Community Groups, la CNCF propose :
 
 Consultez le guide [best_practices.md](./best_practices.md), qui traite notamment :
 
-- De la [création d'un groupe](./best_practices.md#0-create-the-cloud-native-community-group), de la recherche d'intervenants et de sponsors.
+- De la [création d'un groupe](./best_practices.md#0-créer-le-groupe-communautaire-cloud-native), de la recherche d'intervenants et de sponsors.
 - De la planification, de l'annonce et du déroulement des événements.
 - Des listes de vérification destinées aux hôtes et organisateurs.
 - Du suivi après les événements et des conditions d'obtention des objets promotionnels CNCF.
 
 ## Comment candidater
 
-Les candidatures peuvent désormais être soumises au moyen d'une [issue GitHub](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=new-group-request.yaml&title=%5BGroup+Request%5D+Create+New+Community+Group).
+Les candidatures peuvent désormais être soumises au moyen d'une [issue GitHub](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=regional-group-application.yaml&title=%5BGroup+Request%5D+Create+New+Community+Group).
 
 ## Nommer son chapitre
 
