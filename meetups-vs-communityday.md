@@ -1,34 +1,35 @@
-### Hosting a Meetup versus a Cloud Native Community Day
+### Organiser un meetup ou un Cloud Native Community Day
 
-Hosting meetups can be as simple as 1-2 hours of content + networking no matter what style you decide (speaker to audience, study groups, lightning talks, etc.).
+Un meetup peut être aussi simple qu'une ou deux heures de contenu suivies d'échanges, quel que soit le format : conférences, groupes d'étude, présentations éclair, etc.
 
-Hosting a Cloud Native Community Day is a great way to practice for a KCD. A Cloud Native Community Day can be like a large meetup where:
-* You have a one half (1/2) of a day of content - so 4 hours of multiple speakers.
-* You acquire sponsorships.
-* You provide breaks with beverages and/or food.
-* Your event must be free to attend like a meetup if these are hosted within your chapter. Some have created qualification standards in case your capacity is limited.
-* You still host it on [ocgroups.dev](https://ocgroups.dev/) so CNCF can see you have had practice at an event larger than a meetup, and CNCF can gauge if your community is ready for a KCD based on attendance.
-* These can be hosted as often as you would like with a reccomendation being no more than once per quarter.
-* There is no limit to the number of attendees.
-* NOTE: Hosting a Cloud Native Community Day is not a requirement for hosting a KCD.
+Organiser un **Cloud Native Community Day** est un bon entraînement avant un KCD. Il peut prendre la forme d'un grand meetup dans lequel :
 
-## FAQ
+- Vous proposez une demi-journée de contenu, soit environ quatre heures avec plusieurs intervenants.
+- Vous obtenez des sponsors.
+- Vous prévoyez des pauses avec boissons et/ou restauration.
+- L'événement reste gratuit, comme un meetup, lorsqu'il est organisé au sein de votre chapitre. Certains organisateurs définissent des critères de sélection lorsque la capacité est limitée.
+- Vous publiez toujours l'événement sur [ocgroups.dev](https://ocgroups.dev/) afin que la CNCF puisse constater votre expérience d'un événement plus important qu'un meetup et évaluer, notamment selon la participation, si votre communauté est prête pour un KCD.
+- Vous pouvez en organiser aussi souvent que souhaité, avec une recommandation de ne pas dépasser un par trimestre.
+- Le nombre de participants n'est pas limité.
+- **Remarque :** l'organisation d'un Cloud Native Community Day n'est pas une condition préalable à celle d'un KCD.
 
-### How does a Cloud Native Community Day differ from a KCD?
+## Questions fréquentes
 
-* The KCDs are supported by CNCF with more benefits/perks, and go through an official application and planning process.
-* These are 1 to 2 day events like a summit, and often times can host multiple tracks and keynotes.
-* KCDs can charge a fee for their tickets.
-* KCDs get an accreditation from CNCF for hosting an event.
-* There are requirements to assure CNCF quality standards.
-* KCD have a limit of 500 attendees.
-* KCDs in the same city (and sometimes small country) can only be hosted once per year.
-* Learn more at https://www.cncf.io/kcds/
+### Quelle est la différence entre un Cloud Native Community Day et un KCD ?
 
-### Is a Cloud Native Day in my city a part of the program?
+- Les KCD bénéficient d'un accompagnement et d'avantages supplémentaires de la CNCF et suivent un processus officiel de candidature et de préparation.
+- Ce sont des événements de type conférence, d'une à deux journées, pouvant comprendre plusieurs parcours et des conférences plénières.
+- Les KCD peuvent proposer des billets payants.
+- Les KCD reçoivent une accréditation de la CNCF pour l'organisation de l'événement.
+- Ils doivent respecter les exigences de qualité de la CNCF.
+- Les KCD sont limités à 500 participants.
+- Un KCD ne peut être organisé qu'une fois par an dans une même ville et, parfois, dans un petit pays.
+- Pour en savoir plus : https://www.cncf.io/kcds/
 
-If the event is not named exactly "Cloud Native Community Day", most likely it is not.
+### Un « Cloud Native Day » organisé dans ma ville fait-il partie du programme ?
 
-Events like "Cloud Native {CITY_NAME}",  "Cloud Native Day {CITY_NAME}", "Kubehuddle {CITI_NAME}" are independent from the CNCF,
-even if they might be organized by CNCF Ambassadors or member companies.
-CNCF does not govern those events, and the formats are managed by the respective organizers of the events.
+Si l'événement ne porte pas exactement le nom « Cloud Native Community Day », il est très probable que non.
+
+Les événements tels que « Cloud Native {CITY_NAME} », « Cloud Native Day {CITY_NAME} » ou « Kubehuddle {CITY_NAME} » sont indépendants de la CNCF, même lorsqu'ils sont organisés par des ambassadeurs CNCF ou des entreprises membres.
+
+La CNCF ne gouverne pas ces événements : leurs organisateurs en définissent le format.

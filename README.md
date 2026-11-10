@@ -1,125 +1,124 @@
-# Cloud Native Community Groups
+# Groupes communautaires Cloud Native
 
-- [Program description](#program-description)
-- [Benefits of joining the CNCF Community Groups Program](#benefits-of-joining-the-cncf-community-groups-program)
-- [Best practices](https://github.com/cncf/communitygroups/blob/main/best_practices.md)
-- [How to apply/get started](#how-to-apply)
+- [Présentation du programme](#présentation-du-programme)
+- [Avantages du programme](#avantages-du-programme)
+- [Bonnes pratiques](./best_practices.md)
+- [Comment candidater](#comment-candidater)
 - [Communication](#communication)
-- [Marketing Best Practices and Resources](#marketing-best-practices-and-resources)
-  - [Branding & Logos](#branding--logos)
-- [Naming your chapter](#naming-your-chapter)
-- [Chapter Activity](#community-group-inactivity)
-- [Code of Conduct](#code-of-conduct)
+- [Communication et ressources promotionnelles](#communication-et-ressources-promotionnelles)
+- [Nommer son chapitre](#nommer-son-chapitre)
+- [Inactivité des groupes](#inactivité-des-groupes)
+- [Code de conduite](#code-de-conduite)
 
-## Program description
+## Présentation du programme
 
-The Cloud Native Computing Foundation supports the worldwide community of Cloud Native Community Groups (CNCGs) - [community.cncf.io](https://community.cncf.io).
-CNCF is currently working on expanding the Cloud Native community worldwide, and we are happy to accept any new local communities to join our network.
-If you are interested in joining the list of official CNCF Community Groups, please review the information below.
-As of 2026, Cloud Native Community Groups program is powered by the [Open Community Groups](https://ocgroups.dev/), and managed by the CNCF staff.
+La Cloud Native Computing Foundation (CNCF) soutient un réseau mondial de Cloud Native Community Groups (CNCG) : [community.cncf.io](https://community.cncf.io).
 
-### Technical Community Groups
+La CNCF souhaite développer la communauté Cloud Native dans le monde entier et accueille de nouveaux groupes locaux dans son réseau. Si vous souhaitez rejoindre la liste des groupes officiels CNCF, consultez les informations ci-dessous.
 
-A [Technical Community Group](https://github.com/cncf/toc/blob/main/governance/tag-governance.md#technical-community-groups) is focused primarily on identifying and discussing a particular technical subject and knowledge base.
+Depuis 2026, le programme Cloud Native Community Groups utilise [Open Community Groups](https://ocgroups.dev/) et est administré par l'équipe CNCF.
 
-### Regional Community Groups
+### Groupes communautaires techniques
 
-A Regional Community Group is the long-standing, traditional type of community group in CNCF. This type of group is primarily focused on building relationships among cloud native end users and contributors.
+Un [Technical Community Group](https://github.com/cncf/toc/blob/main/governance/tag-governance.md#technical-community-groups) s'intéresse principalement à un domaine technique précis et au partage des connaissances correspondantes.
 
-## Benefits of joining the CNCF Community Groups Program
+### Groupes communautaires régionaux
 
-For all Cloud Native Community Groups, CNCF offers the following benefits:
+Les groupes régionaux sont le modèle historique des communautés CNCF. Leur objectif principal est de créer des liens entre utilisateurs finaux et contributeurs aux technologies cloud native.
 
-- One-time complimentary swag coupon of $100 USD to the CNCF Store provided to each community group (not to each organizer), is available after hosting 2 successful (over 10 people attended) in-person events.
-- Joining the CNCF organizer-exclusive Slack channel for collaboration
-- Boosting the visibility of your community group and events. See below under the "Communication" section for more details.
-- 25% discount to Linux Foundation training exams for CKAD and KCNA.
-- Discounts to KubeCon + CloudNativeCons around the world
-- Service coverage for the hosted community platform, Open Community Groups
-  - This includes support from CNCF (Audra Montenegro and Helena Spease).
-- [Office Hours](https://ocgroups.dev/cncf/group/gcprdx7) hosted regularly by a regional CNCF Ambassador.
-- Credly badges for organizers! We would like to recognize your efforts for helping make Cloud Native ubiquitous. To qualify, each December we will see if you have been an organizer for the duration of the year.
-- 5 free certification vouchers for remaining an active chapter year-round. This means at least one (1) in-person event each quarter with more than 10 attendees (not just registrations). So keep track of your event attendance!
+## Avantages du programme
 
-✒️ NOTE: With over 200 active global chapters, we cannot monetarily support your community group with sponsorships outside what is listed above, but we are always looking into adding more incentives.
+Pour l'ensemble des Cloud Native Community Groups, la CNCF propose :
 
-## Best Practices
+- Un bon promotionnel unique de **100 USD** pour la boutique CNCF, attribué au **groupe** et non à chaque organisateur, après **deux événements en présentiel réussis** comptant chacun plus de dix participants.
+- L'accès à un canal Slack réservé aux organisateurs CNCF.
+- Une meilleure visibilité pour les groupes et leurs événements (voir la section « Communication »).
+- Une réduction de **25 %** sur les examens de formation Linux Foundation **CKAD et KCNA**.
+- Des réductions pour les conférences KubeCon + CloudNativeCon dans le monde.
+- L'accompagnement de la plateforme communautaire Open Community Groups, notamment par **Audra Montenegro et Helena Spease**.
+- Des [permanences d'échange](https://ocgroups.dev/cncf/group/gcprdx7) régulièrement animées par un ambassadeur régional CNCF.
+- Des badges Credly pour les organisateurs : chaque décembre, la CNCF vérifie si l'organisateur a exercé cette fonction pendant toute l'année.
+- **Cinq bons de certification gratuits** pour un chapitre demeuré actif toute l'année, soit au moins **un événement en présentiel par trimestre** avec **plus de dix personnes effectivement présentes**, et non simplement inscrites. Conservez les données de présence.
 
-Please check out our [best_practices.md](./best_practices.md) guide for the full walkthrough of running a Cloud Native Community Group, including:
+**Remarque :** avec plus de 200 chapitres actifs dans le monde, la CNCF ne peut pas financer les groupes par des sponsors au-delà des avantages décrits ci-dessus, mais elle continue d'étudier de nouvelles incitations.
 
-- [Creating your group](./best_practices.md#0-create-the-cloud-native-community-group), [finding speakers](./best_practices.md#find-speakers), and [securing sponsorships](./best_practices.md#sponsorships)
-- [Scheduling](./best_practices.md#2-schedule-a-new-event), [announcing](./best_practices.md#3-announce-the-event), and [running](./best_practices.md#4-run-the-event) your event
-- [Host](./best_practices.md#cncf-community-groups---host-checklist) and [Organizer](./best_practices.md#cncf-community-groups---organizer-checklist) checklists for event day
-- [Post-event](./best_practices.md#5-post-event) follow-up and [CNCF swag](./best_practices.md#cncf-swag) eligibility
+## Bonnes pratiques
 
-## How to apply?
+Consultez le guide [best_practices.md](./best_practices.md), qui traite notamment :
 
-Applications can now be submitted via a [GitHub issue](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=new-group-request.yaml&title=%5BGroup+Request%5D+Create+New+Community+Group).
+- De la [création d'un groupe](./best_practices.md#0-create-the-cloud-native-community-group), de la recherche d'intervenants et de sponsors.
+- De la planification, de l'annonce et du déroulement des événements.
+- Des listes de vérification destinées aux hôtes et organisateurs.
+- Du suivi après les événements et des conditions d'obtention des objets promotionnels CNCF.
 
-## Naming your chapter
+## Comment candidater
 
-Please use "Cloud Native CITY NAME" when naming your chapter. We ask that you avoid using "CNCF" in the naming convention, as it can mislead people into think CNCF has employees in that location. You can use "CNCF" within the description of the community group to provide additional context.
+Les candidatures peuvent désormais être soumises au moyen d'une [issue GitHub](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=new-group-request.yaml&title=%5BGroup+Request%5D+Create+New+Community+Group).
 
-"CNCG" is an internal acronym we currently use at CNCF and among organizers, but it has not yet gained traction. So we encourage people to avoid using it in the names of their chapters, as of 2023.
+## Nommer son chapitre
+
+Utilisez la forme **« Cloud Native NOM DE LA VILLE »**. Évitez d'intégrer « CNCF » au nom du groupe : cela pourrait laisser croire que la fondation dispose d'employés sur place. Vous pouvez en revanche mentionner la CNCF dans la description.
+
+« CNCG » est un acronyme interne utilisé par la CNCF et les organisateurs, mais encore peu connu du grand public. Depuis 2023, il est recommandé de ne pas l'employer dans les noms des chapitres.
 
 ## Communication
 
-We strive to keep all organizers as up to date as possible when it comes to program updates and changes. Here are a few ways you can stay in the loop:
+Pour suivre les évolutions du programme :
 
-- Subscribe to our global organizer newsletter by going to your [community profile and then "updates"](https://community.cncf.io/accounts/profile/#updates). There you can opt-in by marking the "Global Organizer Newsletter" checkbox.
-- For current organizers, please reach out to inquiries on the [#community-group-organizers](https://cloud-native.slack.com/archives/C04KB96TA2X) channel in the CNCF slack Workspace. Please avoid using direct messages and use the public channel whenever possible.
-- It's best if you use a public communication channel whenever possible; however, if you need to communicate in private, please feel free to send the program admins a note via community-groups@cncf.io.
+- Abonnez-vous à la newsletter mondiale des organisateurs depuis [votre profil communautaire, rubrique « updates »](https://community.cncf.io/accounts/profile/#updates), en cochant « Global Organizer Newsletter ».
+- Les organisateurs actuels sont invités à utiliser le canal Slack [#community-group-organizers](https://cloud-native.slack.com/archives/C04KB96TA2X) pour leurs questions. Privilégiez les échanges publics plutôt que les messages privés lorsque c'est possible.
+- Pour les échanges confidentiels, écrivez à **community-groups@cncf.io**.
 
-## Marketing Best Practices and Resources
+## Communication et ressources promotionnelles
 
-### Branding & Logos
+### Identité visuelle et logos
 
-Use the official CNCG logo and add "Cloud Native [YOUR CHAPTER NAME]" underneath it. See [branding.md](./branding.md) for the logo source, naming conventions, and other brand assets (promotional graphics, recognition materials).
+Utilisez le logo CNCG officiel en ajoutant « Cloud Native [NOM DU CHAPITRE] » en dessous. Consultez [branding.md](./branding.md) pour les fichiers graphiques, les règles de dénomination et les ressources promotionnelles.
 
-### Social Media
+### Réseaux sociaux
 
-We encourage each chapter to create their own social media accounts on the platforms that are most relevant in their local area, in addition to LinkedIn so CNCF can properly help amplify your announcements.
+Chaque chapitre est encouragé à créer des comptes sur les réseaux sociaux adaptés à sa région, ainsi qu'une présence sur LinkedIn pour permettre à la CNCF de relayer ses annonces.
 
-CNCF is present on [Twitter (X)](https://twitter.com/CloudNativeFdn) and [LinkedIn](https://www.linkedin.com/company/cloud-native-computing-foundation/mycompany/) with over 100,000 followers on each platform.
+La CNCF est présente sur [X](https://twitter.com/CloudNativeFdn) et [LinkedIn](https://www.linkedin.com/company/cloud-native-computing-foundation/mycompany/), avec plus de 100 000 abonnés sur chaque plateforme selon le document source.
 
-IMPORTANT: Every LinkedIn page created should be created as a company page, and must add CNCF's core community program manager, Audra Montenegro or Helena Spease as an admin.
+**Important :** toute page LinkedIn créée pour un chapitre doit être une **page entreprise** et désigner **Audra Montenegro ou Helena Spease** comme administratrice au titre du programme communautaire CNCF.
 
-### Common things to promote in your meetups
+### Contenus à promouvoir lors des meetups
 
-- Speakers and their content! This is the most attractive thing to your audience
-- The details! Tell people when, where, and the location of your meetup
-- Food and beverage! What refreshments will you will be providing
-- Promote your sponsors! They will appreciate the shout out. You do this by thanking them for sponsoring your event and showcasing their logo. They also appreciate you linking to their website or social media.
-- Giveaways! Not everyone will have this opportunity, over time you will generate sponsors for this, or [earn a voucher from us](README.md#benefits-of-joining-the-cncf-community-groups-program).
+- Les intervenants et leurs présentations, qui attirent particulièrement le public.
+- Les informations pratiques : date, heure et lieu.
+- Les boissons et repas prévus.
+- Les sponsors : remerciez-les, affichez leurs logos et ajoutez des liens vers leurs sites ou réseaux sociaux.
+- Les cadeaux promotionnels, lorsqu'ils sont disponibles auprès des sponsors ou grâce à un [bon CNCF](#avantages-du-programme).
 
-### Promotional Graphics
+### Visuels promotionnels
 
-See [branding.md](./branding.md#promotional-graphics) for Canva templates that will help with sizing and placement of key content.
+Consultez [branding.md](./branding.md) pour les modèles Canva et les recommandations de mise en page.
 
-### Partnering with other communities
+### Partenariats avec d'autres communautés
 
-This is acceptable, as long as it is a general tech community or open source community. Usually the exchange is presence at their events, and your brand recognition. CNCF just asks you do not market them as affiliated with CNCF unless they are official CNCF groups.
+Les partenariats avec des communautés technologiques ou open source sont autorisés, notamment pour participer mutuellement aux événements et gagner en visibilité. Ne présentez toutefois pas ces communautés comme affiliées à la CNCF si elles ne sont pas des groupes officiels CNCF.
 
-## Community Group Inactivity
+## Inactivité des groupes
 
-If your group has more than 90 days of inactivity in the number of events/meetups being held, then you will be deemed an "Inactive" group via the Cloud Native Computing Foundation and removed from the community.cncf.io site.
+Un groupe qui n'organise aucun événement ou meetup pendant **plus de 90 jours** est considéré comme **inactif** par la CNCF et retiré du site community.cncf.io.
 
-Technical Community Groups that fail to meet at least six times in a calendar year will also be considered inactive.
+Les groupes communautaires techniques qui ne se réunissent pas **au moins six fois par année civile** sont également considérés comme inactifs.
 
-There are many ways to keep your chapter active outside of regular in-person, speaker-to-audience meetups. Examples are:
+Pour maintenir l'activité d'un chapitre, vous pouvez notamment :
 
-- Co-hosting a meetup with a neighboring chapter. [Learn about the Co-Host feature in Open Community Groups](https://ocgroups.dev/docs).
-- Host a study group for one of the many Kubernetes certifications
-- Use Open Community Groups' virtual feature to host a virtual meetup or study group
+- Coorganiser un meetup avec un chapitre voisin, grâce à la [fonction de coorganisation d'Open Community Groups](https://ocgroups.dev/docs).
+- Organiser un groupe d'étude consacré à une certification Kubernetes.
+- Organiser un meetup ou un groupe d'étude virtuel avec Open Community Groups.
 
-Should a co-organizer become inactive, a fellow organizer may submit an issue for said organizer's removal. The person who's removal is requested must be tagged in the issue. Once tagged, that person is provided a 30 day window to respond otherwsie, removal will move forward.
+Si un coorganisateur devient inactif, un autre organisateur peut ouvrir une issue pour demander son retrait. La personne concernée doit être mentionnée dans l'issue et dispose de **30 jours** pour répondre avant la poursuite de la procédure.
 
-Should a community group violate vendor neutrality — a CNCF core value — the following path towards deactivation will occur.
+En cas de violation de la **neutralité vis-à-vis des fournisseurs**, valeur fondamentale de la CNCF, les mesures suivantes s'appliquent :
 
-- 1st offense = a written violation via email
-- 2nd offense = a community meeting with organizers for final warning
-- 3rd offense = disabling your chapter
+1. Première violation : avertissement écrit par email.
+2. Deuxième violation : réunion communautaire avec les organisateurs et dernier avertissement.
+3. Troisième violation : désactivation du chapitre.
 
-## Code of Conduct
+## Code de conduite
 
-Cloud Native Community Groups follow the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
+Les Cloud Native Community Groups suivent le [Code de conduite de la CNCF](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
