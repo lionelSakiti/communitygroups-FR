@@ -17,35 +17,35 @@ body:
   id: name
   attributes:
     label: Sujet de ce groupe communautaire technique
-    placeholder: Ex. : TCG Platform Engineering
+    placeholder: "Ex. : TCG Platform Engineering"
   validations:
     required: true
 - id: content
   type: textarea
   attributes:
     label: Quelle est la mission ou l'objectif de ce nouveau groupe ?
-    placeholder: Ex. : Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, les gérer et les étendre. Tous les niveaux sont les bienvenus. Nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes.
+    placeholder: "Ex. : Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, les gérer et les étendre. Tous les niveaux sont les bienvenus. Nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes."
   validations:
     required: true
 - id: organizer_1
   type: textarea
   attributes:
     label: Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io
-    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: true
 - id: organizer_2
   type: textarea
   attributes:
     label: Présentez vos coorganisateurs avec les mêmes informations que pour vous-même, ou indiquez l'issue GitHub du dépôt TOC dans laquelle ce point a été traité.
-    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: false
 - id: organizer_3
   type: textarea
   attributes:
     label: Présentez vos coorganisateurs avec les mêmes informations que pour vous-même, ou indiquez l'issue GitHub du dépôt TOC dans laquelle ce point a été traité.
-    placeholder: Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: false
 - id: organizer_coc
