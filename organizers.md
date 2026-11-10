@@ -1,35 +1,45 @@
-# ORGANIZERS
+# Organisateurs
 
-### NUMBER OF ORGANIZERS
-In order to remain a strong and active community, we believe CNCGs are successful with 2 or more organizers with responsibilities
-divided among each other. Ideally there is no more than 5 organizers for virtual chapters, and no more than 7 for in-person. Please refer to the roles below. NOTE: This organizer capacity does not apply to parent chapters that are country-wide or regional chapters (i.e. LATAM or EU).
+### Nombre d'organisateurs
 
-You are already donating your time to further the knowledge and awareness of Cloud Native technologies, likely in addition to a full-time job. In addition, people may fall ill, get injured, or have new deadlines. With that, it will benefit you to have backup to avoid cancellations of your meetups.
+Pour conserver une communauté solide et active, la CNCF considère qu'un groupe CNCG fonctionne mieux avec **au moins deux organisateurs**, qui se répartissent les responsabilités. Idéalement, il ne devrait pas y avoir plus de **cinq organisateurs pour les chapitres virtuels** et de **sept pour les chapitres en présentiel**. Consultez les rôles ci-dessous.
 
-### VENDOR REPRESENTATION
-Each team should have no more than 50% of organizers from the same company. This is to assure fair voting practices, what's more --> vendor neutrality.
+**Remarque :** ces limites ne s'appliquent pas aux chapitres parents couvrant un pays entier ou une région, par exemple l'Amérique latine ou l'Europe.
 
-IMPORTANT: Cloud Native Community Groups are NOT to be used for self benefit. In an effort to avoid monopolizing practices, organizers cannot belong to more than two (2) community groups as an organizer. You may of course help advise other groups, but will not be recognized as an organizer on the front-end of said chapter page if you do not reside in, or travel to that chapter location 50% of the calendar year.
+Vous consacrez déjà bénévolement du temps à la diffusion des technologies cloud native, souvent en parallèle d'un emploi à temps plein. Les maladies, accidents ou nouvelles échéances professionnelles peuvent survenir. Avoir des personnes relais permet d'éviter l'annulation des meetups.
 
-### All organizers are leaders
-Thank you in advance for not assuming lead organizer roles. For details on roles and permissions, please refer to the [OCGroups documentation](https://ocgroups.dev/docs#/guides/group-dashboard?id=roles-and-permissions).
+### Représentation des fournisseurs
 
-### Assignments
-We do however, suggest your team figure out who has more experience organizing different facets of community groups like:
-* Sponsorships
-* Speakers
-* F&B (Food and Beverage)
-* A/V (Audio & Video)
-* Swag
-* On-site emcee
-* Attendee marketing and communications
+Une équipe ne doit pas compter plus de **50 % d'organisateurs issus de la même entreprise**. Cette règle favorise des décisions équitables et la neutralité vis-à-vis des fournisseurs.
 
-NOTE: If your team is small, it is common to have 1-2 assignments per person.
+**Important :** les Cloud Native Community Groups ne doivent **pas** servir des intérêts personnels. Pour éviter les situations de monopole, une personne ne peut pas être organisatrice de plus de **deux groupes communautaires**. Elle peut conseiller d'autres groupes, mais ne sera pas reconnue comme organisatrice sur la page publique d'un chapitre si elle ne réside pas dans sa zone ou ne s'y rend pas pendant au moins 50 % de l'année civile.
 
-### Team additions
+### Tous les organisateurs sont des responsables
 
-If you wish to add someone or multiple people to your team, you may submit [an organizer GitHub issue/request](https://github.com/cncf/communitygroups/issues) on behalf of these co-organizers and have that person (or people) comment on the issue agreeing the the organizer terms. Or this person / these people can submit on behalf of themselves and at least 50% of organizers shall comment with affirmation of said person being added as a co-organizer.
+Merci de ne pas vous attribuer d'office le rôle d'organisateur principal. Pour les rôles et autorisations, consultez la [documentation OCGroups](https://ocgroups.dev/docs#/guides/group-dashboard?id=roles-and-permissions).
 
-### Team resignation
+### Répartition des responsabilités
 
-If someone on your team wishes, or agrees to step down as an organizer, please have them [submit a GitHub issue](https://github.com/cncf/communitygroups/issues) via the organizer request form here. You may [submit an issue](https://github.com/cncf/communitygroups/issues) on their behalf, but that team member will still need to comment affirming their resignation. This is to assure communication among the team, and transparency to the rest of your local community.
+L'équipe est invitée à déterminer qui possède le plus d'expérience dans les domaines suivants :
+
+- Sponsoring
+- Intervenants
+- Restauration et boissons
+- Audiovisuel
+- Objets promotionnels
+- Animation sur place
+- Communication et promotion auprès des participants
+
+**Remarque :** dans une petite équipe, une personne peut assumer une ou deux responsabilités.
+
+### Ajout de membres à l'équipe
+
+Pour ajouter une ou plusieurs personnes à l'équipe, vous pouvez [ouvrir une demande GitHub concernant les organisateurs](https://github.com/cncf/communitygroups/issues) en leur nom. Les personnes concernées devront commenter l'issue pour accepter les conditions applicables aux organisateurs.
+
+Elles peuvent aussi soumettre elles-mêmes leur demande. Dans ce cas, au moins **50 % des organisateurs actuels** doivent confirmer leur accord dans les commentaires.
+
+### Démission d'un membre de l'équipe
+
+Si une personne souhaite quitter son rôle d'organisateur, demandez-lui de [soumettre une issue GitHub](https://github.com/cncf/communitygroups/issues) au moyen du formulaire de demande concernant les organisateurs.
+
+Vous pouvez également ouvrir l'issue en son nom, mais cette personne devra confirmer sa démission dans un commentaire. Cela garantit la communication au sein de l'équipe et la transparence envers la communauté locale.
