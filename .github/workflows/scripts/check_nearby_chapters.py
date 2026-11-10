@@ -54,7 +54,7 @@ def extract_location_from_issue(issue_body):
 
     # Pattern to match the location field in the issue template
     # Looking for "City or location name for your CNCG" section
-    pattern = r'###\s*City or location name for your CNCG\s*\n\s*(.+?)(?:\n\n|\n###|$)'
+    pattern = r'###\s*(?:City or location name for your CNCG|Nom de la ville ou du lieu de votre CNCG)\s*\n\s*(.+?)(?:\n\n|\n###|$)'
     match = re.search(pattern, issue_body, re.IGNORECASE | re.DOTALL)
 
     if match:
