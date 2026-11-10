@@ -17,44 +17,44 @@ body:
   id: name
   attributes:
     label: Sujet de ce groupe communautaire technique
-    placeholder: e.g. TCG Platform Engineering
+    placeholder: "Ex. : TCG Platform Engineering"
   validations:
     required: true
 - id: content
   type: textarea
   attributes:
     label: Quelle est la mission ou l'objectif de ce nouveau groupe ?
-    placeholder: e.g. Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, les gérer et les étendre. Tous les niveaux sont les bienvenus. Nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes.
+    placeholder: "Ex. : Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, les gérer et les étendre. Tous les niveaux sont les bienvenus. Nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes."
   validations:
     required: true
 - id: organizer_1
   type: textarea
   attributes:
-    label: Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    label: "Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io"
+    placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: true
 - id: organizer_2
   type: textarea
   attributes:
     label: Présentez vos coorganisateurs avec les mêmes informations que pour vous-même, ou indiquez l'issue GitHub du dépôt TOC dans laquelle ce point a été traité.
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: false
 - id: organizer_3
   type: textarea
   attributes:
     label: Présentez vos coorganisateurs avec les mêmes informations que pour vous-même, ou indiquez l'issue GitHub du dépôt TOC dans laquelle ce point a été traité.
-    placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
+    placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: false
 - id: organizer_coc
   type: checkboxes
   attributes:
     label: Code de conduite
-    description: "The Code de conduite helps create a safe space for everyone. We require that everyone agrees to it, including any and all future speakers and future co-organizers."
+    description: "Le Code de conduite contribue à créer un environnement sûr pour tous. Toutes les personnes, y compris les futurs intervenants et coorganisateurs, doivent l'accepter."
     options:
-      - label: Nous acceptons de respecter le [CNCF Code de conduite](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
+      - label: Nous acceptons de respecter le [Code de conduite CNCF](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
         required: true
 - id: organizer_affiliation
   type: checkboxes
@@ -70,7 +70,7 @@ body:
     label: Inclusion
     description: "Vous vous engagez à accueillir toutes les personnes souhaitant apprendre le cloud native, quel que soit leur niveau d'expérience en open source."
     options:
-      - label: Nous acceptons. À cette fin, tous les organisateurs ont récemment suivi la formation [Inclusion Open Source Community Orientation (LFC102) ](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
+      - label: Nous acceptons. À cette fin, tous les organisateurs ont récemment suivi la formation [Inclusive Open Source Community Orientation (LFC102)](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
         required: true
 - id: organizer_neutrality
   type: checkboxes

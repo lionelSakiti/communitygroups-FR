@@ -1,4 +1,4 @@
-name: Check for Nearby Chapters
+name: Vérifier les chapitres à proximité
 
 on:
   issues:
@@ -8,10 +8,10 @@ on:
 
 jobs:
   check-nearby-chapters:
-    # Run when a [Group Request] issue is opened, or when someone comments
-    # "/recheck" on one (a manual retry, e.g. after a transient API failure).
-    # Comments made with the default GITHUB_TOKEN do not re-trigger workflows,
-    # so the bot's own "/recheck" instructions cannot start a loop.
+    # Exécution à l'ouverture d'une issue [Group Request], ou lorsqu'une personne écrit
+    # « /recheck » dans un commentaire (nouvel essai manuel après une erreur temporaire de l'API).
+    # Les commentaires créés avec le GITHUB_TOKEN par défaut ne relancent pas les workflows,
+    # les instructions du robot ne peuvent donc pas créer de boucle.
     if: >
       (github.event_name == 'issues' &&
        contains(github.event.issue.title, '[Group Request]')) ||
@@ -24,20 +24,20 @@ jobs:
       issues: write
 
     steps:
-      - name: Checkout repository
+      - name: Récupérer le dépôt
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Installer Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Installer les dépendances
         run: |
           python -m pip install --upgrade pip
           pip install requests geopy
 
-      - name: Check for nearby chapters
+      - name: Vérifier les chapitres voisins
         id: check-chapters
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
@@ -45,7 +45,7 @@ jobs:
         run: |
           python .github/workflows/scripts/check_nearby_chapters.py
 
-      - name: Comment on issue
+      - name: Commenter l'issue
         uses: actions/github-script@v7
         env:
           STATUS: ${{ steps.check-chapters.outputs.status }}
@@ -55,26 +55,26 @@ jobs:
           script: |
             const status = process.env.STATUS;
             const nearbyChapters = process.env.NEARBY_CHAPTERS;
-            // A /recheck comment is an explicit request, so acknowledge it even
-            // when nothing is found; a freshly opened issue stays silent in that case.
+            // Un commentaire /recheck constitue une demande explicite : répondre même
+            // sans résultat. À l'ouverture d'une issue, ne rien publier si aucun chapitre n'est trouvé.
             const isRecheck = process.env.EVENT_NAME === 'issue_comment';
 
             let body = null;
             if (status === 'found') {
-              body = `## ⚠️ Nearby Chapters Detected\n\n` +
-                `We found existing CNCF Community Group chapters near your requested location:\n\n` +
+              body = `## ⚠️ Chapitres à proximité détectés\n\n` +
+                `Nous avons trouvé des chapitres CNCF Community Group près du lieu demandé :\n\n` +
                 nearbyChapters + `\n\n` +
-                `Please review these existing chapters. If they are in your area, we recommend:\n` +
-                `- Reaching out to the current organizers to collaborate\n` +
-                `- Filing an [organizer request](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=organizer-request.yml&title=%5BOrganizer+Request%5D+Add+or+Remove+Organizer+Name) to join as a co-organizer\n\n` +
-                `If these chapters are not in your immediate area and you believe there is sufficient population to support a new chapter, please provide additional context in this issue.`;
+                `Examinez ces chapitres existants. S'ils se trouvent dans votre zone, nous recommandons :\n` +
+                `- Contacter les organisateurs actuels pour collaborer\n` +
+                `- Déposer une [demande pour devenir organisateur](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=organizer-request.yml&title=%5BOrganizer+Request%5D+Add+or+Remove+Organizer+Name) pour rejoindre l'équipe comme coorganisateur\n\n` +
+                `Si ces chapitres ne sont pas dans votre zone immédiate et que vous estimez que la population permet de créer un autre chapitre, précisez votre situation dans cette issue.`;
             } else if (status === 'error') {
-              body = `## ⚠️ Couldn't check for nearby chapters\n\n` +
-                `We couldn't reach the CNCF chapter directory to check for nearby chapters. This is usually temporary.\n\n` +
-                `Comment \`/recheck\` on this issue to run the check again.`;
+              body = `## ⚠️ Impossible de vérifier les chapitres à proximité\n\n` +
+                `Le répertoire des chapitres CNCF est temporairement inaccessible. La vérification n'a pas pu aboutir.\n\n` +
+                `Commentez \`/recheck\` dans cette issue pour relancer la vérification.`;
             } else if (status === 'none' && isRecheck) {
-              body = `## ✅ No nearby chapters found\n\n` +
-                `We re-checked and didn't find any existing CNCF Community Group chapters near your requested location.`;
+              body = `## ✅ Aucun chapitre voisin trouvé\n\n` +
+                `Après une nouvelle vérification, aucun chapitre CNCF Community Group existant n'a été trouvé près du lieu demandé.`;
             }
 
             if (body) {

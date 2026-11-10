@@ -1,14 +1,14 @@
 repository:
-  # See https://developer.github.com/v3/repos/#edit for all available settings.
+  # Consulter https://developer.github.com/v3/repos/#edit pour les paramètres disponibles.
 
-  # The name of the repository. Changing this will rename the repository
+  # Nom du dépôt. Modifier cette valeur renommerait le dépôt.
   name: cluster
 
-  # A short description of the repository that will show up on GitHub
+  # Brève description du dépôt affichée sur GitHub.
   👩🏿‍💻👨🏿‍💻👩🏾‍💻👨🏾‍💻👩🏽‍💻👨🏽‍💻👩🏼‍💻👨🏼‍💻👩🏻‍💻👨🏻‍💻CNCF Community Groups (formerly meetups)
 
-  # A URL with more information about the repository
+  # URL contenant des informations complémentaires sur le dépôt.
   homepage: https://community.cncf.io/
 
-  # Collaborators: give specific users access to this repository.
-  # This should be managed via CLOWarden, see https://github.com/cncf/people
+  # Collaborateurs : accorder l'accès au dépôt à des utilisateurs précis.
+  # Cet accès doit être géré via CLOWarden : https://github.com/cncf/people

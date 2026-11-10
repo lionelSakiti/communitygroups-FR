@@ -3,13 +3,13 @@ name: sessionize-new-proposal
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14-23,0-2 * * 1-5" # Every hour between 8AM and 8PM CST, Monday to Friday
+    - cron: "0 14-23,0-2 * * 1-5" # Toutes les heures de 8 h à 20 h CST, du lundi au vendredi (description d'origine ; vérifier le fuseau effectif du cron)
 env:
-  # Setting an environment variable with the value of a configuration variable
+  # Définir une variable d'environnement à partir d'une variable de configuration
   SESSIONIZE_LATEST_SESSION_ID_PREVIOUS: ${{ vars.SESSIONIZE_LATEST_SESSION_ID }}
 
-# No checkout. The retrieve job hits Sessionize + Slack webhooks; the
-# update-github-variable job uses secrets.REPO_ACCESS_TOKEN (not GITHUB_TOKEN).
+# Pas de checkout : le job de récupération appelle Sessionize et le webhook Slack ; le
+# job de mise à jour utilise secrets.REPO_ACCESS_TOKEN (et non GITHUB_TOKEN).
 permissions: {}
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
       SESSIONIZE_LATEST_SESSION_ID_OUTPUT: ${{ steps.retrieve-sessions.outputs.SESSIONIZE_LATEST_SESSION_ID_OUTPUT }}
     steps:
     - id: retrieve-sessions
-      name: Retrieve latest session
+      name: Récupérer la dernière session
       env:
         SESSIONIZE_SESSION_LIST_URL: ${{ secrets.SESSIONIZE_SESSION_LIST_URL }}
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -29,19 +29,19 @@ jobs:
         echo "SESSIONIZE_LATEST_SESSION_ID_OUTPUT=$SESSIONIZE_LATEST_SESSION_ID" >> "$GITHUB_OUTPUT"
 
         if [ -z "$SESSIONIZE_LATEST_SESSION_ID_PREVIOUS" ]; then
-          echo "Previous session ID is empty, skipping Slack notification"
+          echo "L'identifiant de la session précédente est vide : notification Slack ignorée"
           exit 0
         fi
 
         if [ "$SESSIONIZE_LATEST_SESSION_ID_PREVIOUS" -eq "$SESSIONIZE_LATEST_SESSION_ID" ]; then
-          echo "Latest session ID is the same as the previous one, skipping Slack notification"
+          echo "L'identifiant de la dernière session est inchangé : notification Slack ignorée"
           exit 0
         fi
 
         SESSIONIZE_NEW_SESSIONS=$(curl -s $SESSIONIZE_SESSION_LIST_URL | jq -r --arg SESSIONIZE_LATEST_SESSION_ID_PREVIOUS "$SESSIONIZE_LATEST_SESSION_ID_PREVIOUS" '[.[].sessions[] | select(.id | tonumber > ($SESSIONIZE_LATEST_SESSION_ID_PREVIOUS | tonumber)) | {id, title, description, speakers: ([.speakers[].name] | join(", "))}]')
         echo $SESSIONIZE_NEW_SESSIONS | jq -c '.[]' | while read -r object; do
           curl -s --location "$SLACK_WEBHOOK_URL" --header 'Content-Type: application/json' --data "$object"
-          sleep 3 # sleep to avoid rate limiting
+          sleep 3 # Pause pour éviter de dépasser les limites de requêtes
         done
 
   update-github-variable:
