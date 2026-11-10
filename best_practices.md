@@ -60,10 +60,9 @@ Il peut être difficile de faire vivre un groupe seul. Il est préférable de s'
 
 ### Trouver des intervenants
 
-Mettez à disposition un **formulaire** permettant de proposer une intervention, par exemple :
-https://docs.google.com/forms/d/1V2Y03YMOrIor0M796_WMbYx-fdsn80ngaT-PIum8gUU/edit
+Mettez à disposition un **formulaire** permettant de proposer une intervention. Un [formulaire francophone de proposition d'intervention Cloud Native](https://forms.gle/v9UtxAdhhXuVByhB9) est disponible.
 
-> **Remarque :** faites une copie de ce formulaire ! Ne modifiez pas l'original.
+> **Remarque :** ce formulaire est une adaptation communautaire francophone, distincte du formulaire d'origine. Pour votre propre chapitre, vous pouvez en créer une copie et l'adapter à vos besoins.
 
 **Conseil :** Sessionize propose une licence communautaire à laquelle vous pouvez candidater si vous organisez des événements gratuits. [En savoir plus](https://sessionize.com/playbook/community-license).
 
