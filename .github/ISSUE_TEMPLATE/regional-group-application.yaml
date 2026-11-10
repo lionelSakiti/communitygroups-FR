@@ -130,7 +130,7 @@ body:
   type: checkboxes
   attributes:
     label: Accepter d'utiliser l'identité visuelle CNCG
-    description: "Afin d'éviter toute utilisation abusive des marques et de préserver l'identité commune du programme CNCG, vous acceptez d'utiliser [l'identité visuelle CNCG](https://github.com/cncf/artwork/blob/main/examples/other.md#cloud-native-community-groups) (see also [branding.md](https://github.com/cncf/communitygroups/blob/main/branding.md) pour les règles de dénomination et les autres ressources graphiques)."
+    description: "Afin d'éviter toute utilisation abusive des marques et de préserver l'identité commune du programme CNCG, vous acceptez d'utiliser [l'identité visuelle CNCG](https://github.com/cncf/artwork/blob/main/examples/other.md#cloud-native-community-groups) (voir aussi [branding.md](https://github.com/lionelSakiti/communitygroups-FR/blob/main/branding.md) pour les règles de dénomination et les autres ressources graphiques)."
     options:
       - label: J'accepte/Nous acceptons d'utiliser le logo CNCG pour le groupe et ses réseaux sociaux.
         required: true
