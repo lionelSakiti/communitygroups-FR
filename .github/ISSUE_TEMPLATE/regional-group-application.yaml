@@ -1,174 +1,174 @@
-name: Cloud Native Community Group (CNCG) Request
-description: Request to create a new Cloud Native Community Group in your city
+name: Demande de création d'un groupe communautaire Cloud Native (CNCG)
+description: Demander la création d'un nouveau groupe communautaire Cloud Native dans votre ville
 title: "[Group Request] Create a new group"
 body:
 - type: markdown
   attributes:
     value: |
-      ### Please Read:
+      ### À lire avant de commencer :
       
-      :loudspeaker: Prior to filling out the form below, please check [community.cncf.io](https://community.cncf.io) to confirm there isn't an active group in your area. If there is an active group, we recommend collaborating with the current organizers. You can also [file an organizer issue here](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=organizer-request.yml&title=%5BOrganizer+Request%5D+Add+or+Remove+Organizer+Name). :loudspeaker:
+      :loudspeaker: Avant de remplir ce formulaire, consultez [community.cncf.io](https://community.cncf.io) pour vérifier qu'aucun groupe actif n'existe dans votre zone. Si un groupe existe, nous recommandons de collaborer avec ses organisateurs. Vous pouvez également [ouvrir une demande pour devenir organisateur](https://github.com/cncf/communitygroups/issues/new?assignees=&labels=&projects=&template=organizer-request.yml&title=%5BOrganizer+Request%5D+Add+or+Remove+Organizer+Name). :loudspeaker:
 
-      Additionally, check all [open issues](https://github.com/cncf/communitygroups/issues) to ensure there isn't an open request. If there is an open ticket, please comment within that GitHub issue expressing your interest in co-organizing.
+      Consultez également toutes les [issues ouvertes](https://github.com/cncf/communitygroups/issues) pour vérifier qu'une demande similaire n'est pas déjà en cours. Si c'est le cas, indiquez dans un commentaire votre intérêt pour la coorganisation.
       
-      If you have checked all the above and there are no active groups or open GitHub issues, please fill out this form for our team to review.
+      Si ces vérifications ne révèlent aucun groupe actif ni demande en cours, remplissez ce formulaire pour permettre à notre équipe d'examiner votre candidature.
 - type: input
   id: name
   attributes:
-    label: City or location name for your CNCG
-    description: "If you recently had a group deactivated, please do not fill out this form; instead, reach out to community-groups@cncf.io."
+    label: Nom de la ville ou du lieu de votre CNCG
+    description: "Si votre groupe a été désactivé récemment, ne remplissez pas ce formulaire : contactez plutôt community-groups@cncf.io."
     placeholder: e.g. Cloud Native San Francisco
   validations:
     required: true
 - id: location
   type: input
   attributes:
-    label: What country do you want to start your community group in?
-    placeholder: e.g. United States
+    label: Dans quel pays souhaitez-vous créer votre groupe communautaire ?
+    placeholder: Ex. : Bénin
   validations:
     required: true
 - id: organizer_1
   type: textarea
   attributes:
-    label: Tell us about yourself. List your name, email, company, GitHub URL, LinkedIn URL, CNCF Slack workspace name (or if you need to be invited), and your required profile link on community.cncf.io
+    label: Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: true
 - id: organizer_inclusivity
   type: checkboxes
   attributes:
-    label: Inclusive
-    description: "You agree to be inclusive of all people eager to learn about cloud native, regardless of their level of expertise in their open source journey."
+    label: Inclusion
+    description: "Vous vous engagez à accueillir toutes les personnes souhaitant découvrir le cloud native, quel que soit leur niveau d'expérience en open source."
     options:
-      - label: I/We agree. To ensure this, I/we have recently completed the [Inclusive Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
+      - label: J'accepte/Nous acceptons. Pour cela, j'ai/nous avons récemment suivi la formation [Inclusion Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
         required: true
 - id: organizer_inclusivity_badge_1
   type: input
   attributes:
-    label: Link to your LFC102 Credly Badge
+    label: Lien vers votre badge Credly LFC102
     placeholder: e.g. https://www.credly.com/badges/...
-    description: "Please paste the link to your Credly badge proving completion of the LFC102 course."
+    description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: true
 - id: organizer_2
   type: textarea
   attributes:
-    label: Tell us about your co-organizer. List their name, email, company, GitHub URL, LinkedIn URL, CNCF Slack workspace name (or if they need to be invited), and their required profile link on community.cncf.io
+    label: Présentez votre coorganisateur : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers son profil community.cncf.io
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: false
 - id: organizer_inclusivity_badge_2
   type: input
   attributes:
-    label: Link to your co-organizers LFC102 Credly Badge
+    label: Lien vers le badge Credly LFC102 de votre coorganisateur
     placeholder: e.g. https://www.credly.com/badges/...
-    description: "Please paste the link to your Credly badge proving completion of the LFC102 course."
+    description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: false
 - id: organizer_3
   type: textarea
   attributes:
-    label: Tell us about your co-organizer. List their name, email, company, GitHub URL, LinkedIn URL, CNCF Slack workspace name (or if they need to be invited), and their required profile link on community.cncf.io
+    label: Présentez votre coorganisateur : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers son profil community.cncf.io
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: false
 - id: organizer_inclusivity_badge_3
   type: input
   attributes:
-    label: Link to your co-organizers LFC102 Credly Badge
+    label: Lien vers le badge Credly LFC102 de votre coorganisateur
     placeholder: e.g. https://www.credly.com/badges/...
-    description: "Please paste the link to your Credly badge proving completion of the LFC102 course."
+    description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: false
 - id: meetupDOTcom
   type: textarea
   attributes:
-    label: If you already run a meetup, please link it here
+    label: Si vous organisez déjà un meetup, indiquez son lien ici
     placeholder: e.g. https://www.meetup.com/bay-area-kubernetes-meetup/
   validations:
     required: false
 - id: content
   type: textarea
   attributes:
-    label: What is your mission statement or objective for this new group?
-    placeholder: e.g. We’re excited about microservices, containers, the distributions that run them, and the solutions that deploy, manage, and extend them. Any skill level is welcome; we’re all new to Kubernetes, and we want to create an open, welcoming environment for other Kubernauts.
+    label: Quelle est la mission ou l'objectif de ce nouveau groupe ?
+    placeholder: e.g. Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, de les gérer et de les étendre. Tous les niveaux sont les bienvenus ; nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes.
   validations:
     required: true
 - id: organizer_coc
   type: checkboxes
   attributes:
-    label: Code of Conduct
-    description: "The Code of Conduct helps create a safe space for everyone. We require everyone to agree to it, including any and all future speakers and future co-organizers."
+    label: Code de conduite
+    description: "The Code de conduite helps create a safe space for everyone. We require everyone to agree to it, including any and all future speakers and future co-organizers."
     options:
-      - label: I/We agree to follow the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
+      - label: J'accepte/Nous acceptons de respecter le [CNCF Code de conduite](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
         required: true
 - id: organizer_residency
   type: checkboxes
   attributes:
-    label: Where organizers reside
-    description: "All CNCG organizers must live in the area where they are seeking to host a group. The above-mentioned location must be where you reside full time."
+    label: Lieu de résidence des organisateurs
+    description: "Tous les organisateurs CNCG doivent résider à temps plein dans la zone où ils souhaitent créer leur groupe."
     options:
-      - label: I/We confirm I/we am/are local to, or live near, the city of the above-proposed group.
+      - label: Je confirme/Nous confirmons résider dans la ville du groupe proposé ou à proximité.
         required: true
 - id: organizer_affiliation
   type: checkboxes
   attributes:
-    label: Organizers' companies/affiliations
-    description: "Not all CNCG organizers can be from the same company."
+    label: Entreprises et affiliations des organisateurs
+    description: "Les organisateurs CNCG ne peuvent pas tous appartenir à la même entreprise."
     options:
-      - label: I/We agree that if there is more than one organizer now or onboarded in the future, the majority will come from different companies.
+      - label: J'accepte/Nous acceptons que, dès lors qu'il y a plusieurs organisateurs, la majorité provienne d'entreprises différentes.
         required: true
 - id: organizer_neutrality
   type: checkboxes
   attributes:
-    label: Vendor neutral
-    description: "CNCGs should have vendor-neutral content for the main portion of your meetups. Please note that [sponsors can have up to 15 minutes on stage](https://github.com/cncf/communitygroups/blob/main/best_practices.md#sponsorships)."
+    label: Neutralité vis-à-vis des fournisseurs
+    description: "Le contenu principal des meetups CNCG doit rester neutre vis-à-vis des fournisseurs. Notez que [les sponsors peuvent disposer de 15 minutes de parole au maximum](https://github.com/cncf/communitygroups/blob/main/best_practices.md#sponsorships)."
     options:
-      - label: I/We have read what [vendor neutrality means](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) and agree that the main content of our meetups will remain vendor-neutral.
+      - label: J'ai/Nous avons pris connaissance de ce que [signifie la neutralité vis-à-vis des fournisseurs](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) et acceptons que le contenu principal de nos meetups reste neutre vis-à-vis des fournisseurs.
         required: true
 - id: organizer_branding
   type: checkboxes
   attributes:
-    label: Agree to use CNCG branding
-    description: "In an effort to avoid trademark misuse and maintain unity within the CNCG program, you agree to use [CNCG branding](https://github.com/cncf/artwork/blob/main/examples/other.md#cloud-native-community-groups) (see also [branding.md](https://github.com/cncf/communitygroups/blob/main/branding.md) for naming conventions and other brand assets)."
+    label: Accepter d'utiliser l'identité visuelle CNCG
+    description: "Afin d'éviter toute utilisation abusive des marques et de préserver l'identité commune du programme CNCG, vous acceptez d'utiliser [l'identité visuelle CNCG](https://github.com/cncf/artwork/blob/main/examples/other.md#cloud-native-community-groups) (see also [branding.md](https://github.com/cncf/communitygroups/blob/main/branding.md) pour les règles de dénomination et les autres ressources graphiques)."
     options:
-      - label: I/We agree to use the CNCG logo in my/our group and social branding.
+      - label: J'accepte/Nous acceptons d'utiliser le logo CNCG pour le groupe et ses réseaux sociaux.
         required: true
 - id: organizer_registration
   type: checkboxes
   attributes:
-    label: Registration through CNCF platforms
-    description: "In order to properly support your group with benefits, registration for your meetups must be through CNCF platforms, or the current CNCF community platform."
+    label: Inscriptions sur les plateformes CNCF
+    description: "Pour que votre groupe bénéficie de l'accompagnement prévu, les inscriptions aux meetups doivent passer par les plateformes CNCF ou la plateforme communautaire CNCF en vigueur."
     options:
-      - label: I/We agree to host free registration on the main CNCF platform.
+      - label: J'accepte/Nous acceptons de proposer des inscriptions gratuites sur la plateforme principale de la CNCF.
         required: true
 - id: organizer_activity
   type: checkboxes
   attributes:
-    label: Remain an active group
-    description: "You agree to host a meetup, study group, or virtual event [at least once every 90 days (quarter)](https://github.com/cncf/communitygroups/blob/main/README.md#community-group-inactivity). If you foresee a delay, you will notify the CNCF team via community-groups@cncf.io."
+    label: Maintenir un groupe actif
+    description: "Vous acceptez d'organiser un meetup, un groupe d'étude ou un événement virtuel [au moins une fois tous les 90 jours (par trimestre)](https://github.com/cncf/communitygroups/blob/main/README.md#community-group-inactivity). En cas de retard prévisible, vous informerez l'équipe CNCF à community-groups@cncf.io."
     options:
-      - label: I/We agree to have a meetup at least once every 90 days, or else communicate the reasoning for upcoming inactivity.
+      - label: J'accepte/Nous acceptons d'organiser un meetup au moins tous les 90 jours, ou de communiquer les raisons d'une éventuelle période d'inactivité.
         required: true
 - id: organizer_collaboration
   type: checkboxes
   attributes:
-    label: Collaboration with other groups
-    description: "CNCF has the right to approve additional groups in your location if you live in a significantly populous area."
+    label: Collaboration avec d'autres groupes
+    description: "La CNCF peut approuver d'autres groupes dans votre zone si celle-ci est suffisamment peuplée."
     options:
-      - label: I/We acknowledge CNCF's right to approve additional groups in my area based on this criteria.
+      - label: Je reconnais/Nous reconnaissons le droit de la CNCF d'approuver d'autres groupes dans notre zone selon ce critère.
         required: true
 - id: organizer_diversity
   type: checkboxes
   attributes:
-    label: Aim to have a diverse representation of speakers in your meetups
-    description: "Diversity means something different in each country. The common goal across all countries is to strive to promote women and other non-male speakers."
+    label: Favoriser la diversité des intervenants lors des meetups
+    description: "La diversité varie selon les pays. L'objectif commun est de promouvoir la participation des femmes et des personnes ne s'identifiant pas comme hommes parmi les intervenants."
     options:
-      - label: I/We will do our best to host diverse speakers throughout the year.
+      - label: Je ferai/Nous ferons de notre mieux pour accueillir des intervenants diversifiés tout au long de l'année.
         required: true
 - type: markdown
   attributes:
     value: |
-      ### Review Time
+      ### Délai d'examen
 
-      Review of your group request may take up to 30 days while our team performs due diligence. If you have questions during the process, please comment within your GitHub issue.
+      L'examen de votre demande peut prendre jusqu'à 30 jours, le temps de procéder aux vérifications nécessaires. Pour toute question, commentez votre issue GitHub.
