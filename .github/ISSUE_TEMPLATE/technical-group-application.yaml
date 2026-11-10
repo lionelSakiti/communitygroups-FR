@@ -1,5 +1,5 @@
-name: Technical Community Group Request
-description: Request to create a new Cloud Native Community Group by topic
+name: Demande de création d'un groupe communautaire technique
+description: Demander la création d'un groupe communautaire Cloud Native consacré à un sujet technique
 title: "[TCG Request] <Group Topic>"
 labels:
   - kind/tech-community-group
@@ -7,88 +7,88 @@ body:
 - type: markdown
   attributes:
     value: |
-      ### Please Read:
+      ### À lire avant de commencer :
       
-      :loudspeaker: Prior to filling out the below form, please check [community.cncf.io](https://community.cncf.io) to confirm there is not already an active Technical Community Group for this topic. 
+      :loudspeaker: Avant de remplir ce formulaire, consultez [community.cncf.io](https://community.cncf.io) pour vérifier qu'aucun groupe communautaire technique actif ne traite déjà de ce sujet. 
       
-      Please note--review of your request can take up to 30 days, as our team performs our due diligence. If you have questions throughout the process, please comment within your GitHub issue.
+      L'examen de votre demande peut prendre jusqu'à 30 jours, le temps de procéder aux vérifications nécessaires. Pour toute question, ajoutez un commentaire à votre issue GitHub.
 
 - type: input
   id: name
   attributes:
-    label: Topic of this TCG
+    label: Sujet de ce groupe communautaire technique
     placeholder: e.g. TCG Platform Engineering
   validations:
     required: true
 - id: content
   type: textarea
   attributes:
-    label: What is your mission statement or objective for this new chapter?
-    placeholder: e.g. We’re excited about microservices, containers, the distributions that run them and the solutions that deploy, manage, and extend them. Any skill level is welcome; we’re all new to Kubernetes and we want to create an open, welcoming environment for other Kubernauts.
+    label: Quelle est la mission ou l'objectif de ce nouveau groupe ?
+    placeholder: e.g. Nous nous intéressons aux microservices, aux conteneurs, à leurs distributions et aux solutions permettant de les déployer, les gérer et les étendre. Tous les niveaux sont les bienvenus. Nous souhaitons créer un environnement ouvert et accueillant pour les passionnés de Kubernetes.
   validations:
     required: true
 - id: organizer_1
   type: textarea
   attributes:
-    label: Tell us about yourself. List your name, email, company, GitHub URL, LinkedIn URL, and CNCF Slack workspace name (or if you need to be invited), and a required profile link on community.cncf.io
+    label: Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: true
 - id: organizer_2
   type: textarea
   attributes:
-    label: Tell us about your co-organizers. List their information just as you did for yourself, or point to the GitHub issue where this was resolved in the TOC repository.
+    label: Présentez vos coorganisateurs avec les mêmes informations que pour vous-même, ou indiquez l'issue GitHub du dépôt TOC dans laquelle ce point a été traité.
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: false
 - id: organizer_3
   type: textarea
   attributes:
-    label: Tell us about your co-organizers. List their information just as you did for yourself, or point to the GitHub issue where this was resolved in the TOC repository.
+    label: Présentez vos coorganisateurs avec les mêmes informations que pour vous-même, ou indiquez l'issue GitHub du dépôt TOC dans laquelle ce point a été traité.
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: false
 - id: organizer_coc
   type: checkboxes
   attributes:
-    label: Code of Conduct
-    description: "The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it, including any and all future speakers and future co-organizers."
+    label: Code de conduite
+    description: "The Code de conduite helps create a safe space for everyone. We require that everyone agrees to it, including any and all future speakers and future co-organizers."
     options:
-      - label: We agree to follow the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
+      - label: Nous acceptons de respecter le [CNCF Code de conduite](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
         required: true
 - id: organizer_affiliation
   type: checkboxes
   attributes:
-    label: Organizer affiliations
-    description: "The majority of TCG organizers cannot come from the same company."
+    label: Affiliation des organisateurs
+    description: "La majorité des organisateurs du groupe ne peut pas appartenir à la même entreprise."
     options:
-      - label: I confirm on behalf of the all the TCG organizers that not more than half of us are from the same organization.
+      - label: Je confirme, au nom de tous les organisateurs, que la moitié au maximum appartient à la même organisation.
         required: true
 - id: organizer_inclusivity
   type: checkboxes
   attributes:
-    label: Inclusive
-    description: "You agree to be inclusive of all people eager to learn about cloud native, no matter what level of expertise they are at in their open source journey."
+    label: Inclusion
+    description: "Vous vous engagez à accueillir toutes les personnes souhaitant apprendre le cloud native, quel que soit leur niveau d'expérience en open source."
     options:
-      - label: We agree. To assure this, all TCG organizers have recently completed the [Inclusive Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
+      - label: Nous acceptons. À cette fin, tous les organisateurs ont récemment suivi la formation [Inclusion Open Source Community Orientation (LFC102) ](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
         required: true
 - id: organizer_neutrality
   type: checkboxes
   attributes:
-    label: Vendor Neutral
-    description: "TCGs should have vendor-neutral content for the main portion of your meetups. Please note that [sponsors can have up to 15 minutes on stage](https://github.com/cncf/communitygroups/blob/main/best_practices.md#sponsorships)"
+    label: Neutralité vis-à-vis des fournisseurs
+    description: "La majeure partie des meetups doit être neutre vis-à-vis des fournisseurs. Notez que [les sponsors peuvent disposer de 15 minutes de prise de parole au maximum](https://github.com/cncf/communitygroups/blob/main/best_practices.md#sponsorships)"
     options:
-      - label: We have read what [vendor-neutrality means](https://contribute.cncf.io/maintainers/community/vendor-neutrality/), and agree that the main content of our meetups will remain vendor-neutral
+      - label: Nous avons pris connaissance de ce que [signifie la neutralité vis-à-vis des fournisseurs](https://contribute.cncf.io/maintainers/community/vendor-neutrality/), et acceptons que le contenu principal de nos meetups reste neutre vis-à-vis des fournisseurs
         required: true
 - id: organizer_diversity
   type: checkboxes
   attributes:
-    label: Aim to have a diverse representation of speakers in your meetings.
-    description: "Diversity means something different for each country. The commonality among all countries is to strive to promote women or non-male speakers."
+    label: Favoriser la diversité des intervenants lors des rencontres.
+    description: "La diversité prend des formes différentes selon les pays. L'objectif commun est de promouvoir la participation des femmes et des personnes ne s'identifiant pas comme hommes parmi les intervenants."
     options:
-      - label: We will do our best to host diverse presenters throughout the year
+      - label: Nous ferons de notre mieux pour accueillir des intervenants diversifiés tout au long de l'année
         required: true
 - type: markdown
   attributes:
     value: |
-      ### Review of your chapter request can take up to 30 days, as our team performs our due diligence. If you have questions throughout the process, please comment within your GitHub issue.
+      ### L'examen de votre demande peut prendre jusqu'à 30 jours. Pour toute question pendant cette période, commentez votre issue GitHub.
