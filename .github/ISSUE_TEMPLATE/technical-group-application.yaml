@@ -30,7 +30,7 @@ body:
 - id: organizer_1
   type: textarea
   attributes:
-    label: Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io
+    label: "Présentez-vous : nom, email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'invitation) et lien obligatoire vers votre profil community.cncf.io"
     placeholder: "Ex. : Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about"
   validations:
     required: true
