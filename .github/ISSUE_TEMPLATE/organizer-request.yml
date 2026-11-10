@@ -1,113 +1,113 @@
-name: Chapter Organizer Request
-description: This form is for those who are requesting to become a new organizer, or to remove an organizer from an existing CNCG on community.cncf.io.
+name: Demande concernant les organisateurs d'un chapitre
+description: Ce formulaire permet de demander l'ajout ou le retrait d'un organisateur d'un groupe CNCG existant sur community.cncf.io.
 title: "[Organizer Request] Add or Remove Organizer Name"
 body:
 - type: markdown
   attributes:
     value: |
-      If you are requesting to become a new organizer. The CNCF team will tag/add the current CNCG organizers to review and comment on your request.
+      Si vous souhaitez devenir organisateur, l'équipe CNCF mentionnera les organisateurs actuels du groupe pour qu'ils examinent et commentent votre demande.
       
-      If you are requesting to remove an organizer, please fill out the below as a formal resignation
+      Si vous demandez le retrait d'un organisateur, remplissez les champs ci-dessous pour formaliser la démission.
 - id: chapter
   type: input
   attributes:
-    label: Name of chapter inquiring about
+    label: Nom du chapitre concerné
     placeholder: e.g. Cloud Native San Francisco
   validations:
     required: true
 - id: organizer
   type: textarea
   attributes:
-    label: Tell us about yourself. List your name, email, company, GitHub URL, LinkedIn URL, and CNCF Slack workspace name (or if you need to be invited), and a required profile link on community.cncf.io
+    label: Présentez-vous : nom, adresse email, entreprise, URL GitHub, URL LinkedIn, identifiant Slack CNCF (ou besoin d'une invitation) et lien obligatoire vers votre profil community.cncf.io
     placeholder: e.g. Audra Montenegro, CNCF, https://github.com/AudMonte01, https://www.linkedin.com/in/audramontenegro/, Audra Montenegro in CNCF Slack, https://community.cncf.io/u/m8bqcv/#/about
   validations:
     required: true
 - id: organizer_2
   type: textarea
   attributes:
-    label: Tell us why you want to be added or removed from the chapter
-    placeholder: e.g. I, Audra Montenegro would like to join as a co-organizer. I have xyz experience that would be an asset to the chapter
+    label: Expliquez pourquoi vous souhaitez rejoindre ou quitter ce chapitre
+    placeholder: e.g. Je souhaite rejoindre le chapitre comme coorganisateur et apporter mon expérience à la communauté
   validations:
     required: false
 - type: markdown
   attributes:
     value: |
-       ### If requesting to become a new organizer please review and accept the below terms and conditions all organizers adhere to:
+       ### Si vous demandez à devenir organisateur, prenez connaissance des conditions suivantes et acceptez-les :
 - id: organizer_coc
   type: checkboxes
   attributes:
-    label: Code of Conduct
-    description: "The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it."
+    label: Code de conduite
+    description: "The Code de conduite helps create a safe space for everyone. We require that everyone agrees to it."
     options:
-      - label: I agree to follow the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
+      - label: J'accepte de respecter le [CNCF Code de conduite](https://github.com/cncf/foundation/blob/main/code-of-conduct.md)
         required: false
 - id: organizer_residency
   type: checkboxes
   attributes:
-    label: Where organizer resides
-    description: "All new CNCG organizers must live in the area they are inquiring to host a chapter in. The above-mentioned location must be where you reside full time."
+    label: Lieu de résidence de l'organisateur
+    description: "Tout nouvel organisateur CNCG doit résider à temps plein dans la zone où se trouve le chapitre concerné."
     options:
-      - label: I confirm I am local to or live near the city of the above-proposed chapter (do not mark if not relevant to request)
+      - label: Je confirme résider dans la ville du chapitre proposé ou à proximité (ne pas cocher si cette condition ne concerne pas la demande)
         required: false
 - id: organizer_affiliation
   type: checkboxes
   attributes:
-    label: Organizers companies/affiliations
-    description: "Not all CNCG organizers can be from the same company."
+    label: Entreprises et affiliations des organisateurs
+    description: "Les organisateurs CNCG ne peuvent pas tous appartenir à la même entreprise."
     options:
-      - label: I come from xyz company which is differing from that of the current organizers (do not mark if not relevant to request)
+      - label: Je travaille dans une entreprise différente de celle des organisateurs actuels (ne pas cocher si sans objet)
         required: false
 - id: organizer_inclusivity
   type: checkboxes
   attributes:
-    label: Inclusive
-    description: "You agree to be inclusive of all people eager to learn about cloud native, no matter what level of expertise they are at in their open source journey."
+    label: Inclusion
+    description: "Vous acceptez d'accueillir toutes les personnes souhaitant découvrir le cloud native, quel que soit leur niveau en open source."
     options:
-      - label: I agree. To assure this, I have recently completed the [Inclusive Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/) (do not mark if not relevant to request). I will comment in this issue with a link to my Credly badge proving completion of the course.
+      - label: J'accepte. Pour cela, j'ai récemment suivi la formation [Inclusion Open Source Community Orientation (LFC102) course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/) (ne pas cocher si sans objet). J'ajouterai dans un commentaire le lien vers mon badge Credly attestant de cette formation.
         required: false
 - id: organizer_inclusivity_badge
   type: input
   attributes:
-    label: Link to your LFC102 Credly Badge
+    label: Lien vers votre badge Credly LFC102
     placeholder: e.g. https://www.credly.com/badges/...
-    description: "Please paste the link to your Credly badge proving completion of the LFC102 course."
+    description: "Collez le lien vers votre badge Credly attestant de la réussite de la formation LFC102."
   validations:
     required: false
 - id: organizer_neutrality
   type: checkboxes
   attributes:
-    label: Vendor Neutral
-    description: "CNCGs should have vendor-neutral content for the main portion of your meetups. Please note that [sponsors can have up to 15 minutes on stage](https://github.com/cncf/communitygroups/blob/main/best_practices.md#sponsorships)"
+    label: Neutralité vis-à-vis des fournisseurs
+    description: "Le contenu principal des meetups CNCG doit rester neutre vis-à-vis des fournisseurs. Notez que [les sponsors peuvent disposer de 15 minutes de parole au maximum](https://github.com/cncf/communitygroups/blob/main/best_practices.md#sponsorships)"
     options:
-      - label: I have read what [vendor-neutrality means](https://contribute.cncf.io/maintainers/community/vendor-neutrality/), and I agree the main content of our meetups will remain vendor-neutral (do not mark if not relevant to request)
+      - label: J'ai pris connaissance de ce que [signifie la neutralité vis-à-vis des fournisseurs](https://contribute.cncf.io/maintainers/community/vendor-neutrality/), et j'accepte que le contenu principal des meetups reste neutre vis-à-vis des fournisseurs (ne pas cocher si sans objet)
         required: false
 - id: organizer_activity
   type: checkboxes
   attributes:
-    label: Remain an active chapter
-    description: "You understand and agree to host a meetup, study group, or virtual event [at least 1 time every 90 days (quarter)](https://github.com/cncf/communitygroups/blob/main/README.md#community-group-inactivity). And if you foresee a delay, you will notify the CNCF team via community-groups@cncf.io"
+    label: Maintenir un chapitre actif
+    description: "Vous comprenez et acceptez d'organiser un meetup, un groupe d'étude ou un événement virtuel [au moins une fois tous les 90 jours (par trimestre)](https://github.com/cncf/communitygroups/blob/main/README.md#community-group-inactivity). En cas de retard prévisible, vous informerez l'équipe CNCF à community-groups@cncf.io"
     options:
-      - label: I understand the activity level standards of all CNCF chapters (do not mark if not relevant to request)
+      - label: Je comprends les exigences d'activité des chapitres CNCF (ne pas cocher si sans objet)
         required: false
 - id: organizer_collaboration
   type: checkboxes
   attributes:
-    label: Collaboration with other chapters
-    description: "CNCF has the right to approve additional chapters in your location if you live in a significant populous area."
+    label: Collaboration avec d'autres chapitres
+    description: "La CNCF peut approuver d'autres chapitres dans votre zone si celle-ci est suffisamment peuplée."
     options:
-      - label: I acknowledge the CNCF right to approve additional chapters in my area based on this criteria (do not mark if not relevant to request)
+      - label: Je reconnais le droit de la CNCF d'approuver d'autres chapitres dans ma zone selon ce critère (ne pas cocher si sans objet)
         required: false
 - id: organizer_diversity
   type: checkboxes
   attributes:
-    label: Aim to have a diverse representation of speakers in your meetups
-    description: "Diversity means something different for each country. The commonality among all countries is to strive to promote women or non-male speakers."
+    label: Favoriser la diversité des intervenants lors des meetups
+    description: "La diversité varie selon les pays. L'objectif commun est de promouvoir la participation des femmes et des personnes ne s'identifiant pas comme hommes parmi les intervenants."
     options:
-      - label: I will do my best to host diverse speakers throughout the year (do not mark if not relevant to request)
+      - label: Je ferai de mon mieux pour accueillir des intervenants diversifiés tout au long de l'année (ne pas cocher si sans objet)
         required: false
 - type: markdown
   attributes:
     value: |
-     #### Review and approval for your request to become a new organizer can take up to 30 days allowing the current organizers time to review and discuss your request. All communication will be with in the GitHub issue. If you have questions throughout the process, please comment within your GitHub issue.
+     #### L'examen et l'approbation d'une demande pour devenir organisateur peuvent prendre jusqu'à 30 jours afin de laisser aux organisateurs actuels le temps d'en discuter. Tous les échanges se déroulent dans l'issue GitHub. Posez vos questions dans ses commentaires.
      
-     #### Resignation time can vary. Please add @AudMonte01 as an assignee for a faster turnaround.
+     #### Le délai de traitement d'une démission peut varier. Assignez @AudMonte01 à l'issue pour accélérer son traitement.
