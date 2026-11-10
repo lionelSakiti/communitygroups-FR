@@ -66,7 +66,7 @@ def extract_location_from_issue(issue_body):
     # Fallback: try to find any location-like text after the first heading
     lines = issue_body.split('\n')
     for i, line in enumerate(lines):
-        if 'City or location name' in line or 'location name for your CNCG' in line.lower():
+        if ('City or location name' in line or 'location name for your CNCG' in line.lower() or 'Nom de la ville ou du lieu de votre CNCG' in line):
             # Get the next non-empty line
             for j in range(i + 1, len(lines)):
                 potential_location = lines[j].strip()
