@@ -1,69 +1,71 @@
-# Sessionize New Proposal GitHub Action
+# Action GitHub : nouvelles propositions Sessionize
 
-This GitHub Action polls the Sessionize API for new session proposals and notifies a Slack channel when new proposals are detected.
+Cette action GitHub interroge régulièrement l'API Sessionize pour détecter les nouvelles propositions de sessions et envoie une notification dans un canal Slack.
 
-## Overview
+## Présentation
 
-The action runs on a schedule (every hour between 8 AM and 8 PM CST, Monday to Friday) and can also be triggered manually via workflow dispatch. It performs the following tasks:
+L'action s'exécute selon une planification (toutes les heures entre 8 h et 20 h CST, du lundi au vendredi, selon la description d'origine). Elle peut également être lancée manuellement au moyen de `workflow_dispatch`.
 
-1. Retrieves the latest session ID from Sessionize
-2. Compares it with the previously stored session ID
-3. If new sessions are found, sends notifications to a configured Slack channel
-4. Updates the stored session ID for future comparisons
+Elle effectue quatre opérations :
+
+1. Récupérer l'identifiant de la dernière session dans Sessionize.
+2. Le comparer à l'identifiant précédemment enregistré.
+3. Envoyer des notifications dans le canal Slack configuré lorsque de nouvelles sessions sont détectées.
+4. Mettre à jour l'identifiant enregistré pour les prochaines comparaisons.
 
 ## Configuration
 
-The following secrets and variables need to be configured in your GitHub repository:
+Configurez les secrets et variables suivants dans votre dépôt GitHub :
 
-To configure these settings:
-1. Go to your repository's Settings
-2. Navigate to Secrets and variables → Actions
-3. Add the following secrets and variables:
+1. Ouvrez les **Settings** du dépôt.
+2. Accédez à **Secrets and variables → Actions**.
+3. Ajoutez les secrets et variables indiqués ci-dessous.
 
-### Required Secrets
-- `SESSIONIZE_SESSION_LIST_URL`: The URL endpoint for retrieving sessions from Sessionize
+### Secrets nécessaires
 
-> **Note:** To create the Sessionize session list URL:
-> 1. Log into your Sessionize account
-> 2. Navigate to the API / Embed tab
-> 3. Click "Create new endpoint"
-> 4. Select JSON as the format
-> 5. In the "Includes sessions" dropdown, select "All Except Declined"
-> 6. Click "Create"
-> 7. Once created, click the "Get Code" button
-> 8. Copy the Session List URL (the URL that ends with `/view/Sessions`)
+- `SESSIONIZE_SESSION_LIST_URL` : URL permettant de récupérer les sessions depuis Sessionize.
 
-- `SLACK_WEBHOOK_URL`: The webhook URL for your Slack channel
-- `REPO_ACCESS_TOKEN`: A GitHub token with permissions to update repository variables
+Pour obtenir cette URL :
 
-> **Note:** To set up the Slack webhook, create a copy of the Slack automation from [this link](https://slack.com/shortcuts/Ft091QD812HE/e8cce7d6069eb6243181f5050a0f071c). This will provide you with the webhook URL needed for the `SLACK_WEBHOOK_URL` secret.
+1. Connectez-vous à votre compte Sessionize.
+2. Ouvrez l'onglet **API / Embed**.
+3. Cliquez sur **Create new endpoint**.
+4. Choisissez le format **JSON**.
+5. Dans **Includes sessions**, choisissez **All Except Declined**.
+6. Cliquez sur **Create**.
+7. Cliquez sur **Get Code**.
+8. Copiez l'URL de la liste des sessions, qui se termine par `/view/Sessions`.
 
-### Required Variables
-- `SESSIONIZE_LATEST_SESSION_ID`: Stores the ID of the most recently processed session
+- `SLACK_WEBHOOK_URL` : URL du webhook de votre canal Slack.
+- `REPO_ACCESS_TOKEN` : jeton GitHub autorisé à modifier les variables du dépôt.
 
-## How It Works
+**Remarque :** pour configurer le webhook Slack, copiez [cette automatisation Slack](https://slack.com/shortcuts/Ft091QD812HE/e8cce7d6069eb6243181f5050a0f071c), puis utilisez l'URL fournie dans le secret `SLACK_WEBHOOK_URL`.
 
-1. The action retrieves all sessions from Sessionize and identifies the latest session ID
-2. It compares this ID with the previously stored ID (`SESSIONIZE_LATEST_SESSION_ID`)
-3. If new sessions are found, it sends a notification to Slack containing:
-    - Session ID
-    - Title
-    - Description
-    - Speaker names
-4. Finally, it updates the stored session ID for future comparisons
+### Variable nécessaire
 
-> **Note** If the previous ID is empty, it will be populated and no notifications sent.
+- `SESSIONIZE_LATEST_SESSION_ID` : identifiant de la dernière session traitée.
 
-## Schedule
+## Fonctionnement
 
-The action runs automatically:
-- Every hour between 8 AM and 8 PM CST
-- Monday through Friday
-- Can be triggered manually via workflow dispatch
+1. L'action récupère toutes les sessions de Sessionize et identifie l'identifiant le plus récent.
+2. Elle le compare à `SESSIONIZE_LATEST_SESSION_ID`.
+3. Si de nouvelles sessions sont détectées, elle transmet à Slack leur identifiant, titre, description et noms des intervenants.
+4. Elle met ensuite à jour l'identifiant enregistré.
 
-## Output Format
+**Remarque :** si aucun identifiant précédent n'est enregistré, celui-ci est initialisé sans envoyer de notification.
 
-The Slack notifications include the following information for each new session:
+## Planification
+
+L'action est exécutée :
+
+- Toutes les heures entre 8 h et 20 h CST, selon la documentation source.
+- Du lundi au vendredi.
+- Ou manuellement via `workflow_dispatch`.
+
+## Format de sortie
+
+Les notifications Slack contiennent les informations suivantes :
+
 ```json
 {
   "id": "session_id",
@@ -73,8 +75,8 @@ The Slack notifications include the following information for each new session:
 }
 ```
 
-## Error Handling
+## Gestion des erreurs
 
-- The action skips Slack notifications if the previous session ID is empty
-- It continues to update the stored session ID even if no new sessions are found
-- A 3-second delay is implemented between Slack notifications to prevent rate limiting
+- Aucune notification Slack n'est envoyée si l'identifiant précédent est vide.
+- L'identifiant enregistré continue d'être actualisé même lorsqu'aucune nouvelle session n'est détectée.
+- Une pause de trois secondes sépare les notifications Slack afin de limiter le risque de dépassement des quotas d'appels.
