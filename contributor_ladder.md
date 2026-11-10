@@ -1,15 +1,16 @@
-# CNCG Contributor Ladder
+# Parcours de contribution au dépôt CNCG
 
-As of 2026 CNCG organizers are encouraged to improve the Cloud Native Computing Foundation’s (CNCF) documentation, automation, and resources by submitting Pull Requests (PRs) to this repository.
+Depuis 2026, les organisateurs CNCG sont encouragés à améliorer la documentation, les automatisations et les ressources de la Cloud Native Computing Foundation (CNCF) en soumettant des pull requests (PR) à ce dépôt.
 
-## Maintainer Role & Triage Rights
-* Eligibility: Organizers with multiple merged PRs may request maintainer status with triage rights.
-* Scope: This role focuses on repository health, automations, and additional best practices event-management documentation.
-  <p> NOTE: This role does not grant authority over CNCG governance, chapter approvals, or organizer selections. In other words, maintainers do not control or have impact around the acceptance or management of CNCG meetups.</p>
-* Conduct: Abuse of privileges will result in immediate revocation by CNCF staff.
+## Rôle de mainteneur et droits de triage
 
-## Resignation of maintainer status
+- **Éligibilité :** les organisateurs ayant plusieurs PR fusionnées peuvent demander le statut de mainteneur avec des droits de triage.
+- **Périmètre :** ce rôle concerne la maintenance du dépôt, les automatisations et la documentation des bonnes pratiques d'organisation d'événements.
 
-If one feels they can no longer contribute to the CNCG repository, they can simply create an issue in this same repository with their resignation.
+  **Remarque :** ce rôle ne donne aucune autorité sur la gouvernance CNCG, l'approbation des chapitres ou le choix des organisateurs. Les mainteneurs ne contrôlent donc ni l'acceptation ni la gestion des meetups CNCG.
 
+- **Comportement :** tout abus de privilèges entraîne leur révocation immédiate par l'équipe CNCF.
 
+## Renoncer au statut de mainteneur
+
+Une personne qui ne peut plus contribuer au dépôt CNCG peut simplement ouvrir une issue dans ce même dépôt pour annoncer sa démission.
